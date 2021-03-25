@@ -1,0 +1,84 @@
+
+
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"Yoo","isGuest":true,"msgId":"605cac503e4bc","referral":"605cac503e4bc"}
+	Reply {"timestamp":"2021-03-25 15:29:20.257","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"Hii","isGuest":true,"msgId":"605cac6521d19","referral":"605cac6521d19"}
+	Reply {"timestamp":"2021-03-25 15:29:41.140","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"Yuu","isGuest":true,"msgId":"605cad0072f98","referral":"605cad0072f98"}
+	Reply {"timestamp":"2021-03-25 15:32:16.472","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"Yuu","isGuest":true,"msgId":"605cad2b202c2","referral":"605cad2b202c2"}
+	Reply {"timestamp":"2021-03-25 15:32:59.133","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"Yoo","isGuest":true,"msgId":"605cadb03310c","referral":"605cadb03310c"}
+	Reply {"timestamp":"2021-03-25 15:35:12.211","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"2","isGuest":true,"msgId":"605cadfe15ccb","referral":"605cadfe15ccb"}
+	Reply {"timestamp":"2021-03-25 15:36:30.091","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"Abc","isGuest":true,"msgId":"605cae02b85da","referral":"605cae02b85da"}
+	Reply {"timestamp":"2021-03-25 15:36:34.756","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"Johnny","isGuest":true,"msgId":"605cae7b7b9db","referral":"605cae7b7b9db"}
+	Reply {"timestamp":"2021-03-25 15:38:35.508","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"3","isGuest":true,"msgId":"605cae85a746a","referral":"605cae85a746a"}
+	Reply {"timestamp":"2021-03-25 15:38:45.687","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"2","isGuest":true,"msgId":"605cae8d13daa","referral":"605cae8d13daa"}
+	Reply {"timestamp":"2021-03-25 15:38:53.083","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"1","isGuest":true,"msgId":"605cae9433b7d","referral":"605cae9433b7d"}
+	Reply {"timestamp":"2021-03-25 15:39:00.213","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+	chatid:, msg:
+	response:chat_id=1601748666&text=%2AMain+Menu%2A%0AHi+Tuu%2C+how+can+I+help+you%3F%0A1%EF%B8%8F%E2%83%A3++Place+Order%0A2%EF%B8%8F%E2%83%A3++Complain%0A3%EF%B8%8F%E2%83%A3++View+Cart&parse_mode=markdown
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"Tuu","isGuest":true,"msgId":"605caef46c75f","referral":"605caef46c75f"}
+	Reply {"timestamp":"2021-03-25 15:40:36.446","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+	chatid:, msg:
+	response:chat_id=1601748666&text=%2ACompalin%2A%0APlease+type+your+complain&parse_mode=markdown
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"2","isGuest":true,"msgId":"605caef93f668","referral":"605caef93f668"}
+	Reply {"timestamp":"2021-03-25 15:40:41.261","status":200,"message":"OK","path":"/inbound/"}
+Receive from Telegram
+	chatid:, msg:
+	response:chat_id=1601748666&text=%2ASorry%2A%0AWe+are+sorry+for+the+inconvinience%2C+we+will+try+to+solve+the+issue+as+soon+as+possible+and+get+back+to+you.&parse_mode=markdown
+Receive from Telegram
+	chatid:, msg:
+	response:chat_id=1601748666&text=%2AWelcome%2A%0ADear+User%2C+welcome+to+KALSYM+Foods.+Please+enter+your+name+to+begin%2C&parse_mode=markdown
+Receive from Telegram
+Send to KbotCore
+	Call 209.58.160.20:7313/inbound/?refrenceId=12019890471&senderId=1601748666
+	Body {"callbackUrl":"https://symplified.biz/kbot/telegram/","data":"Fghc","isGuest":true,"msgId":"605caefce4a41","referral":"605caefce4a41"}
+	Reply {"timestamp":"2021-03-25 15:40:44.938","status":200,"message":"OK","path":"/inbound/"}
