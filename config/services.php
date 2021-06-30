@@ -30,4 +30,17 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'kbotcore' => [
+        'url' => env('KBOTCORE_URL','http://localhost:5001')  
+    ],
+
+    'handover' => [
+        'url' => env('HANDOVER_URL','http://localhost:6001')  
+    ],
+
+    'telegram' => [
+        'url' => env('TELEGRAM_URL','https://api.telegram.org'),
+        'token' => env('TELEGRAM_TOKEN')
+    ]
+
 ];

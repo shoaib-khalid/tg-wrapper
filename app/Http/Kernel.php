@@ -39,9 +39,10 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
-        'api' => [
-            'throttle:api',
+        'telegram' => [
+            \App\Http\Middleware\WeWantJSONMiddleware::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            'throttle:telegram',
         ],
     ];
 

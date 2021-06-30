@@ -41,7 +41,7 @@ return [
             'provider' => 'users',
         ],
 
-        'api' => [
+        'telegram' => [
             'driver' => 'token',
             'provider' => 'users',
             'hash' => false,
