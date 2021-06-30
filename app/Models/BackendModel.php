@@ -52,7 +52,7 @@ class BackendModel extends Model
         $messageid = (string)uniqid();
         $header = ["Content-type: application/json"];
         $object = [
-            'callbackUrl' => $appurl.'/kbot/telegram/',
+            'callbackUrl' => $appurl.'/telegram/',
             'data' => $message,
             'isGuest' => true,
             'msgId' => $messageid,
