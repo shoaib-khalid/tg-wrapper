@@ -17,8 +17,8 @@ class TelegramModel extends Model
     protected $replyMessage;
 
     function __construct($msisdn,$message,$replyMessage=[]) {
-        $this->url =  config('telegram.url');
-        $this->token =  config('telegram.url');
+        $this->url =  config('services.telegram.url');
+        $this->token =  config('services.telegram.url');
         $this->msisdn = $msisdn;
         $this->message = $message;
         $this->replyMessage = $replyMessage;

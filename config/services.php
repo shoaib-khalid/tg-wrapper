@@ -41,6 +41,6 @@ return [
     'telegram' => [
         'url' => env('TELEGRAM_URL','https://api.telegram.org'),
         'token' => env('TELEGRAM_TOKEN')
-    ]
+    ],
 
 ];
