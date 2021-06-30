@@ -61,7 +61,7 @@ class IncomingController extends Controller
             );
         }
 
-        \Log::channel('transaction')->info("Telegram -> PATH " . $_ENV['APP_URL'] . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
+        \Log::channel('transaction')->info("Telegram -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
         \Log::channel('transaction')->info("Telegram -> HEADER", $request->header());
         \Log::channel('transaction')->info("Telegram -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
 

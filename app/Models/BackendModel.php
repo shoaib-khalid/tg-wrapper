@@ -18,8 +18,8 @@ class BackendModel extends Model
     
     function __construct($msisdn,$message,$channel) {
 
-        $kbotcore_url = $_ENV['KBOTCORE_URL'];
-        $handover_url = $_ENV['HANDOVER_URL'];
+        $kbotcore_url = config('kbotcore.url');
+        $handover_url = config('handover.url');
 
 		$senderid = preg_replace( '/[^0-9]/', '', $msisdn);
 		$this->message = $message;
@@ -43,7 +43,7 @@ class BackendModel extends Model
 
 	public function send() {
         // construct json object for core
-        $appurl = $_ENV['APP_URL'];
+        $appurl = config('app.url');
         $referenceid = $this->referenceid;
         $message = $this->message;
         $backendurl = $this->backendurl;
