@@ -104,7 +104,7 @@ return [
         'transaction' => [
             'driver' => 'single',
             // 'tap' => [],
-            'path' => storage_path('logs/incoming.log'),
+            'path' => storage_path('logs/transaction.log'),
             'level' => 'debug'
         ],
     ],
