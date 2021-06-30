@@ -40,9 +40,8 @@ class Kernel extends HttpKernel
         ],
 
         'telegram' => [
-            \App\Http\Middleware\WeWantJSONMiddleware::class,
-            \Illuminate\Routing\Middleware\SubstituteBindings::class,
             'throttle:telegram',
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
 
