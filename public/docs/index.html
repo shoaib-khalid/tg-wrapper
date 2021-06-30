@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Laravel Documentation</title>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../docs/css/theme-default.style.css" media="screen">
+    <link rel="stylesheet" href="../docs/css/theme-default.print.css" media="print">
+    <script src="../docs/js/theme-default-3.3.1.js"></script>
+
+    <link rel="stylesheet"
+          href="//unpkg.com/@highlightjs/cdn-assets@10.7.2/styles/obsidian.min.css">
+    <script src="//unpkg.com/@highlightjs/cdn-assets@10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script src="//cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script>
+        var baseUrl = "https://tgw.symplified.biz";
+    </script>
+    <script src="../docs/js/tryitout-3.3.1.js"></script>
+
+</head>
+
+<body data-languages="[&quot;bash&quot;,&quot;javascript&quot;]">
+<a href="#" id="nav-button">
+      <span>
+        MENU
+        <img src="../docs/images/navbar.png" alt="navbar-image" />
+      </span>
+</a>
+<div class="tocify-wrapper">
+                <div class="lang-selector">
+                            <a href="#" data-language-name="bash">bash</a>
+                            <a href="#" data-language-name="javascript">javascript</a>
+                    </div>
+        <div class="search">
+        <input type="text" class="search" id="input-search" placeholder="Search">
+    </div>
+    <ul class="search-results"></ul>
+
+    <ul id="toc">
+    </ul>
+
+            <ul class="toc-footer" id="toc-footer">
+                            <li><a href="../docs/collection.json">View Postman collection</a></li>
+                            <li><a href="../docs/openapi.yaml">View OpenAPI spec</a></li>
+                            <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
+                    </ul>
+            <ul class="toc-footer" id="last-updated">
+            <li>Last updated: June 30 2021</li>
+        </ul>
+</div>
+<div class="page-wrapper">
+    <div class="dark-box"></div>
+    <div class="content">
+        <h1>Introduction</h1>
+<p>This documentation aims to provide all the information you need to work with our API.</p>
+<aside>As you scroll, you'll see code examples for working with the API in different programming languages in the dark area to the right (or as part of the content on mobile).
+You can switch the language used with the tabs at the top right (or from the nav menu at the top left on mobile).</aside>
+<blockquote>
+<p>Base URL</p>
+</blockquote>
+<pre><code class="language-yaml">https://tgw.symplified.biz</code></pre>
+
+        <h1>Authenticating requests</h1>
+<p>This API is not authenticated.</p>
+
+        <h1 id="endpoints">Endpoints</h1>
+    <p>
+        
+    </p>
+
+            <h2 id="endpoints-POSTtelegram-incoming">Receive a newly incoming request from telegram client</h2>
+
+<p>
+</p>
+
+
+
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request POST \
+    "https://tgw.symplified.biz/telegram/incoming" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"callback_query\": {
+        \"message\": {
+            \"chat\": {
+                \"id\": 7
+            },
+            \"from\": {
+                \"username\": \"error\"
+            },
+            \"data\": \"consequatur\"
+        }
+    },
+    \"message\": {
+        \"chat\": {
+            \"id\": 10
+        },
+        \"from\": {
+            \"username\": \"voluptatum\"
+        },
+        \"data\": \"in\"
+    }
+}"
+</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "https://tgw.symplified.biz/telegram/incoming"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "callback_query": {
+        "message": {
+            "chat": {
+                "id": 7
+            },
+            "from": {
+                "username": "error"
+            },
+            "data": "consequatur"
+        }
+    },
+    "message": {
+        "chat": {
+            "id": 10
+        },
+        "from": {
+            "username": "voluptatum"
+        },
+        "data": "in"
+    }
+}
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre>
+
+<div id="execution-results-POSTtelegram-incoming" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTtelegram-incoming"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTtelegram-incoming"></code></pre>
+</div>
+<div id="execution-error-POSTtelegram-incoming" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTtelegram-incoming"></code></pre>
+</div>
+<form id="form-POSTtelegram-incoming" data-method="POST"
+      data-path="telegram/incoming"
+      data-authed="0"
+      data-hasfiles="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      onsubmit="event.preventDefault(); executeTryOut('POSTtelegram-incoming', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTtelegram-incoming"
+                    onclick="tryItOut('POSTtelegram-incoming');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTtelegram-incoming"
+                    onclick="cancelTryOut('POSTtelegram-incoming');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTtelegram-incoming" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>telegram/incoming</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b><code>callback_query</code></b>&nbsp;&nbsp;<small>object</small>     <i>optional</i> &nbsp;
+<br>
+            </summary>
+                                                <p>
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b><code>callback_query.message</code></b>&nbsp;&nbsp;<small>object</small>     <i>optional</i> &nbsp;
+<br>
+            </summary>
+                                                <p>
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b><code>callback_query.message.chat</code></b>&nbsp;&nbsp;<small>object</small>     <i>optional</i> &nbsp;
+<br>
+            </summary>
+                                                <p>
+                        <b><code>callback_query.message.chat.id</code></b>&nbsp;&nbsp;<small>integer</small>     <i>optional</i> &nbsp;
+                <input type="number"
+               name="callback_query.message.chat.id"
+               data-endpoint="POSTtelegram-incoming"
+               data-component="body"  hidden>
+    <br>
+                    </p>
+                                    </details>
+        </p>
+    
+                                                                <p>
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b><code>callback_query.message.from</code></b>&nbsp;&nbsp;<small>object</small>     <i>optional</i> &nbsp;
+<br>
+            </summary>
+                                                <p>
+                        <b><code>callback_query.message.from.username</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="callback_query.message.from.username"
+               data-endpoint="POSTtelegram-incoming"
+               data-component="body"  hidden>
+    <br>
+                    </p>
+                                    </details>
+        </p>
+    
+                                                                <p>
+                        <b><code>callback_query.message.data</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="callback_query.message.data"
+               data-endpoint="POSTtelegram-incoming"
+               data-component="body"  hidden>
+    <br>
+                    </p>
+                                    </details>
+        </p>
+    
+                                    </details>
+        </p>
+                <p>
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b><code>message</code></b>&nbsp;&nbsp;<small>object</small>     <i>optional</i> &nbsp;
+<br>
+            </summary>
+                                                <p>
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b><code>message.chat</code></b>&nbsp;&nbsp;<small>object</small>     <i>optional</i> &nbsp;
+<br>
+            </summary>
+                                                <p>
+                        <b><code>message.chat.id</code></b>&nbsp;&nbsp;<small>integer</small>     <i>optional</i> &nbsp;
+                <input type="number"
+               name="message.chat.id"
+               data-endpoint="POSTtelegram-incoming"
+               data-component="body"  hidden>
+    <br>
+                    </p>
+                                    </details>
+        </p>
+    
+                                                                <p>
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b><code>message.from</code></b>&nbsp;&nbsp;<small>object</small>     <i>optional</i> &nbsp;
+<br>
+            </summary>
+                                                <p>
+                        <b><code>message.from.username</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="message.from.username"
+               data-endpoint="POSTtelegram-incoming"
+               data-component="body"  hidden>
+    <br>
+                    </p>
+                                    </details>
+        </p>
+    
+                                                                <p>
+                        <b><code>message.data</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="message.data"
+               data-endpoint="POSTtelegram-incoming"
+               data-component="body"  hidden>
+    <br>
+                    </p>
+                                    </details>
+        </p>
+    
+    </form>
+
+            <h2 id="endpoints-POSTtelegram-callback-textmessage-push">Sent a single text message to telegram client</h2>
+
+<p>
+</p>
+
+
+
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request POST \
+    "https://tgw.symplified.biz/telegram/callback/textmessage/push" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"recipientIds\": [
+        \"dolore\"
+    ],
+    \"title\": \"deserunt\",
+    \"subTitle\": \"veniam\",
+    \"message\": \"aspernatur\",
+    \"refId\": \"amet\",
+    \"referenceId\": \"mollitia\"
+}"
+</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "https://tgw.symplified.biz/telegram/callback/textmessage/push"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "recipientIds": [
+        "dolore"
+    ],
+    "title": "deserunt",
+    "subTitle": "veniam",
+    "message": "aspernatur",
+    "refId": "amet",
+    "referenceId": "mollitia"
+}
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre>
+
+<div id="execution-results-POSTtelegram-callback-textmessage-push" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTtelegram-callback-textmessage-push"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTtelegram-callback-textmessage-push"></code></pre>
+</div>
+<div id="execution-error-POSTtelegram-callback-textmessage-push" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTtelegram-callback-textmessage-push"></code></pre>
+</div>
+<form id="form-POSTtelegram-callback-textmessage-push" data-method="POST"
+      data-path="telegram/callback/textmessage/push"
+      data-authed="0"
+      data-hasfiles="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      onsubmit="event.preventDefault(); executeTryOut('POSTtelegram-callback-textmessage-push', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTtelegram-callback-textmessage-push"
+                    onclick="tryItOut('POSTtelegram-callback-textmessage-push');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTtelegram-callback-textmessage-push"
+                    onclick="cancelTryOut('POSTtelegram-callback-textmessage-push');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTtelegram-callback-textmessage-push" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>telegram/callback/textmessage/push</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>recipientIds</code></b>&nbsp;&nbsp;<small>string[]</small>  &nbsp;
+                <input type="text"
+               name="recipientIds.0"
+               data-endpoint="POSTtelegram-callback-textmessage-push"
+               data-component="body" required  hidden>
+        <input type="text"
+               name="recipientIds.1"
+               data-endpoint="POSTtelegram-callback-textmessage-push"
+               data-component="body" hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="title"
+               data-endpoint="POSTtelegram-callback-textmessage-push"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>subTitle</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
+                <input type="text"
+               name="subTitle"
+               data-endpoint="POSTtelegram-callback-textmessage-push"
+               data-component="body"  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>message</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="message"
+               data-endpoint="POSTtelegram-callback-textmessage-push"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>refId</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="refId"
+               data-endpoint="POSTtelegram-callback-textmessage-push"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>referenceId</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="referenceId"
+               data-endpoint="POSTtelegram-callback-textmessage-push"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+    
+    </form>
+
+            <h2 id="endpoints-POSTtelegram-callback-menumessage-push">Send Menu Messages to telegram client</h2>
+
+<p>
+</p>
+
+
+
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request POST \
+    "https://tgw.symplified.biz/telegram/callback/menumessage/push" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"recipientIds\": [
+        \"voluptates\"
+    ],
+    \"title\": \"non\",
+    \"subTitle\": \"ullam\",
+    \"menuItems\": {
+        \"type\": \"enim\",
+        \"title\": \"velit\",
+        \"payload\": 12
+    },
+    \"refId\": \"autem\",
+    \"referenceId\": \"veritatis\"
+}"
+</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "https://tgw.symplified.biz/telegram/callback/menumessage/push"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "recipientIds": [
+        "voluptates"
+    ],
+    "title": "non",
+    "subTitle": "ullam",
+    "menuItems": {
+        "type": "enim",
+        "title": "velit",
+        "payload": 12
+    },
+    "refId": "autem",
+    "referenceId": "veritatis"
+}
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre>
+
+<div id="execution-results-POSTtelegram-callback-menumessage-push" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTtelegram-callback-menumessage-push"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTtelegram-callback-menumessage-push"></code></pre>
+</div>
+<div id="execution-error-POSTtelegram-callback-menumessage-push" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTtelegram-callback-menumessage-push"></code></pre>
+</div>
+<form id="form-POSTtelegram-callback-menumessage-push" data-method="POST"
+      data-path="telegram/callback/menumessage/push"
+      data-authed="0"
+      data-hasfiles="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      onsubmit="event.preventDefault(); executeTryOut('POSTtelegram-callback-menumessage-push', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTtelegram-callback-menumessage-push"
+                    onclick="tryItOut('POSTtelegram-callback-menumessage-push');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTtelegram-callback-menumessage-push"
+                    onclick="cancelTryOut('POSTtelegram-callback-menumessage-push');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTtelegram-callback-menumessage-push" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>telegram/callback/menumessage/push</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>recipientIds</code></b>&nbsp;&nbsp;<small>string[]</small>  &nbsp;
+                <input type="text"
+               name="recipientIds.0"
+               data-endpoint="POSTtelegram-callback-menumessage-push"
+               data-component="body" required  hidden>
+        <input type="text"
+               name="recipientIds.1"
+               data-endpoint="POSTtelegram-callback-menumessage-push"
+               data-component="body" hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="title"
+               data-endpoint="POSTtelegram-callback-menumessage-push"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>subTitle</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="subTitle"
+               data-endpoint="POSTtelegram-callback-menumessage-push"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b><code>menuItems</code></b>&nbsp;&nbsp;<small>object</small>     <i>optional</i> &nbsp;
+<br>
+            </summary>
+                                                <p>
+                        <b><code>menuItems.type</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="menuItems.type"
+               data-endpoint="POSTtelegram-callback-menumessage-push"
+               data-component="body" required  hidden>
+    <br>
+                    </p>
+                                                                <p>
+                        <b><code>menuItems.title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="menuItems.title"
+               data-endpoint="POSTtelegram-callback-menumessage-push"
+               data-component="body" required  hidden>
+    <br>
+                    </p>
+                                                                <p>
+                        <b><code>menuItems.payload</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="menuItems.payload"
+               data-endpoint="POSTtelegram-callback-menumessage-push"
+               data-component="body" required  hidden>
+    <br>
+                    </p>
+                                    </details>
+        </p>
+                <p>
+            <b><code>refId</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="refId"
+               data-endpoint="POSTtelegram-callback-menumessage-push"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>referenceId</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="referenceId"
+               data-endpoint="POSTtelegram-callback-menumessage-push"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+    
+    </form>
+
+            <h2 id="endpoints-POSTtelegram-callback-conversation-handle">Revoke chat conversation from handover service</h2>
+
+<p>
+</p>
+
+
+
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request POST \
+    "https://tgw.symplified.biz/telegram/callback/conversation/handle" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"recipientIds\": [
+        \"blanditiis\"
+    ],
+    \"title\": \"minus\",
+    \"subTitle\": \"sequi\",
+    \"message\": \"error\",
+    \"refId\": \"corporis\",
+    \"referenceId\": \"excepturi\"
+}"
+</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "https://tgw.symplified.biz/telegram/callback/conversation/handle"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "recipientIds": [
+        "blanditiis"
+    ],
+    "title": "minus",
+    "subTitle": "sequi",
+    "message": "error",
+    "refId": "corporis",
+    "referenceId": "excepturi"
+}
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre>
+
+<div id="execution-results-POSTtelegram-callback-conversation-handle" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTtelegram-callback-conversation-handle"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTtelegram-callback-conversation-handle"></code></pre>
+</div>
+<div id="execution-error-POSTtelegram-callback-conversation-handle" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTtelegram-callback-conversation-handle"></code></pre>
+</div>
+<form id="form-POSTtelegram-callback-conversation-handle" data-method="POST"
+      data-path="telegram/callback/conversation/handle"
+      data-authed="0"
+      data-hasfiles="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      onsubmit="event.preventDefault(); executeTryOut('POSTtelegram-callback-conversation-handle', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTtelegram-callback-conversation-handle"
+                    onclick="tryItOut('POSTtelegram-callback-conversation-handle');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTtelegram-callback-conversation-handle"
+                    onclick="cancelTryOut('POSTtelegram-callback-conversation-handle');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTtelegram-callback-conversation-handle" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>telegram/callback/conversation/handle</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>recipientIds</code></b>&nbsp;&nbsp;<small>string[]</small>  &nbsp;
+                <input type="text"
+               name="recipientIds.0"
+               data-endpoint="POSTtelegram-callback-conversation-handle"
+               data-component="body" required  hidden>
+        <input type="text"
+               name="recipientIds.1"
+               data-endpoint="POSTtelegram-callback-conversation-handle"
+               data-component="body" hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="title"
+               data-endpoint="POSTtelegram-callback-conversation-handle"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>subTitle</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="subTitle"
+               data-endpoint="POSTtelegram-callback-conversation-handle"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>message</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="message"
+               data-endpoint="POSTtelegram-callback-conversation-handle"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>refId</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="refId"
+               data-endpoint="POSTtelegram-callback-conversation-handle"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>referenceId</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="referenceId"
+               data-endpoint="POSTtelegram-callback-conversation-handle"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+    
+    </form>
+
+            <h2 id="endpoints-POSTtelegram-callback-conversation-pass">Pass chat conversation to handover service</h2>
+
+<p>
+</p>
+
+
+
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request POST \
+    "https://tgw.symplified.biz/telegram/callback/conversation/pass" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"recipientIds\": [
+        \"quod\"
+    ],
+    \"title\": \"fugit\",
+    \"subTitle\": \"odit\",
+    \"message\": \"et\",
+    \"refId\": \"quia\",
+    \"referenceId\": \"expedita\"
+}"
+</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "https://tgw.symplified.biz/telegram/callback/conversation/pass"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "recipientIds": [
+        "quod"
+    ],
+    "title": "fugit",
+    "subTitle": "odit",
+    "message": "et",
+    "refId": "quia",
+    "referenceId": "expedita"
+}
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre>
+
+<div id="execution-results-POSTtelegram-callback-conversation-pass" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTtelegram-callback-conversation-pass"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTtelegram-callback-conversation-pass"></code></pre>
+</div>
+<div id="execution-error-POSTtelegram-callback-conversation-pass" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTtelegram-callback-conversation-pass"></code></pre>
+</div>
+<form id="form-POSTtelegram-callback-conversation-pass" data-method="POST"
+      data-path="telegram/callback/conversation/pass"
+      data-authed="0"
+      data-hasfiles="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      onsubmit="event.preventDefault(); executeTryOut('POSTtelegram-callback-conversation-pass', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTtelegram-callback-conversation-pass"
+                    onclick="tryItOut('POSTtelegram-callback-conversation-pass');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTtelegram-callback-conversation-pass"
+                    onclick="cancelTryOut('POSTtelegram-callback-conversation-pass');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTtelegram-callback-conversation-pass" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>telegram/callback/conversation/pass</code></b>
+        </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>recipientIds</code></b>&nbsp;&nbsp;<small>string[]</small>  &nbsp;
+                <input type="text"
+               name="recipientIds.0"
+               data-endpoint="POSTtelegram-callback-conversation-pass"
+               data-component="body" required  hidden>
+        <input type="text"
+               name="recipientIds.1"
+               data-endpoint="POSTtelegram-callback-conversation-pass"
+               data-component="body" hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="title"
+               data-endpoint="POSTtelegram-callback-conversation-pass"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>subTitle</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="subTitle"
+               data-endpoint="POSTtelegram-callback-conversation-pass"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>message</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="message"
+               data-endpoint="POSTtelegram-callback-conversation-pass"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>refId</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="refId"
+               data-endpoint="POSTtelegram-callback-conversation-pass"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+                <p>
+            <b><code>referenceId</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="referenceId"
+               data-endpoint="POSTtelegram-callback-conversation-pass"
+               data-component="body" required  hidden>
+    <br>
+        </p>
+    
+    </form>
+
+    
+
+        
+    </div>
+    <div class="dark-box">
+                    <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+            </div>
+</div>
+<script>
+    $(function () {
+        var exampleLanguages = ["bash","javascript"];
+        setupLanguages(exampleLanguages);
+    });
+</script>
+</body>
+</html>

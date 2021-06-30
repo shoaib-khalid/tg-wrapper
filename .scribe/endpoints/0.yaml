@@ -1,0 +1,327 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: telegram/incoming
+    metadata:
+      title: 'Receive a newly incoming request from telegram client'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      callback_query:
+        name: callback_query
+        description: ''
+        required: false
+        example: []
+        type: object
+      callback_query.message.chat:
+        name: callback_query.message.chat
+        description: ''
+        required: false
+        example: []
+        type: object
+      callback_query.message:
+        name: callback_query.message
+        description: ''
+        required: false
+        example: []
+        type: object
+      callback_query.message.chat.id:
+        name: callback_query.message.chat.id
+        description: ''
+        required: false
+        example: 7
+        type: integer
+      callback_query.message.from:
+        name: callback_query.message.from
+        description: ''
+        required: false
+        example: []
+        type: object
+      callback_query.message.from.username:
+        name: callback_query.message.from.username
+        description: ''
+        required: false
+        example: error
+        type: string
+      callback_query.message.data:
+        name: callback_query.message.data
+        description: ''
+        required: false
+        example: consequatur
+        type: string
+      message:
+        name: message
+        description: ''
+        required: false
+        example: []
+        type: object
+      message.chat:
+        name: message.chat
+        description: ''
+        required: false
+        example: []
+        type: object
+      message.chat.id:
+        name: message.chat.id
+        description: ''
+        required: false
+        example: 10
+        type: integer
+      message.from:
+        name: message.from
+        description: ''
+        required: false
+        example: []
+        type: object
+      message.from.username:
+        name: message.from.username
+        description: ''
+        required: false
+        example: voluptatum
+        type: string
+      message.data:
+        name: message.data
+        description: ''
+        required: false
+        example: in
+        type: string
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: telegram/callback/textmessage/push
+    metadata:
+      title: 'Sent a single text message to telegram client'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      recipientIds:
+        name: recipientIds
+        description: ''
+        required: true
+        example:
+          - dolore
+        type: 'string[]'
+      title:
+        name: title
+        description: ''
+        required: true
+        example: deserunt
+        type: string
+      subTitle:
+        name: subTitle
+        description: ''
+        required: false
+        example: veniam
+        type: string
+      message:
+        name: message
+        description: ''
+        required: true
+        example: aspernatur
+        type: string
+      refId:
+        name: refId
+        description: ''
+        required: true
+        example: amet
+        type: string
+      referenceId:
+        name: referenceId
+        description: ''
+        required: true
+        example: mollitia
+        type: string
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: telegram/callback/menumessage/push
+    metadata:
+      title: 'Send Menu Messages to telegram client'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      recipientIds:
+        name: recipientIds
+        description: ''
+        required: true
+        example:
+          - voluptates
+        type: 'string[]'
+      title:
+        name: title
+        description: ''
+        required: true
+        example: non
+        type: string
+      subTitle:
+        name: subTitle
+        description: ''
+        required: true
+        example: ullam
+        type: string
+      menuItems:
+        name: menuItems
+        description: ''
+        required: false
+        example: []
+        type: object
+      menuItems.type:
+        name: menuItems.type
+        description: ''
+        required: true
+        example: enim
+        type: string
+      menuItems.title:
+        name: menuItems.title
+        description: ''
+        required: true
+        example: velit
+        type: string
+      menuItems.payload:
+        name: menuItems.payload
+        description: ''
+        required: true
+        example: 12
+        type: integer
+      refId:
+        name: refId
+        description: ''
+        required: true
+        example: autem
+        type: string
+      referenceId:
+        name: referenceId
+        description: ''
+        required: true
+        example: veritatis
+        type: string
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: telegram/callback/conversation/handle
+    metadata:
+      title: 'Revoke chat conversation from handover service'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      recipientIds:
+        name: recipientIds
+        description: ''
+        required: true
+        example:
+          - blanditiis
+        type: 'string[]'
+      title:
+        name: title
+        description: ''
+        required: true
+        example: minus
+        type: string
+      subTitle:
+        name: subTitle
+        description: ''
+        required: true
+        example: sequi
+        type: string
+      message:
+        name: message
+        description: ''
+        required: true
+        example: error
+        type: string
+      refId:
+        name: refId
+        description: ''
+        required: true
+        example: corporis
+        type: string
+      referenceId:
+        name: referenceId
+        description: ''
+        required: true
+        example: excepturi
+        type: string
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: telegram/callback/conversation/pass
+    metadata:
+      title: 'Pass chat conversation to handover service'
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      recipientIds:
+        name: recipientIds
+        description: ''
+        required: true
+        example:
+          - quod
+        type: 'string[]'
+      title:
+        name: title
+        description: ''
+        required: true
+        example: fugit
+        type: string
+      subTitle:
+        name: subTitle
+        description: ''
+        required: true
+        example: odit
+        type: string
+      message:
+        name: message
+        description: ''
+        required: true
+        example: et
+        type: string
+      refId:
+        name: refId
+        description: ''
+        required: true
+        example: quia
+        type: string
+      referenceId:
+        name: referenceId
+        description: ''
+        required: true
+        example: expedita
+        type: string
+    responses: []
+    responseFields: []

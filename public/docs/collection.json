@@ -1,0 +1,188 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "tgw.symplified.biz"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "b1257509-80a0-4fdf-9153-9b0aa3fbb108",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "Receive a newly incoming request from telegram client",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "telegram\/incoming",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/telegram\/incoming"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"callback_query\":{\"message\":{\"chat\":{\"id\":7},\"from\":{\"username\":\"error\"},\"data\":\"consequatur\"}},\"message\":{\"chat\":{\"id\":10},\"from\":{\"username\":\"voluptatum\"},\"data\":\"in\"}}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Sent a single text message to telegram client",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "telegram\/callback\/textmessage\/push",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/telegram\/callback\/textmessage\/push"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"recipientIds\":[\"dolore\"],\"title\":\"deserunt\",\"subTitle\":\"veniam\",\"message\":\"aspernatur\",\"refId\":\"amet\",\"referenceId\":\"mollitia\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Send Menu Messages to telegram client",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "telegram\/callback\/menumessage\/push",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/telegram\/callback\/menumessage\/push"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"recipientIds\":[\"voluptates\"],\"title\":\"non\",\"subTitle\":\"ullam\",\"menuItems\":{\"type\":\"enim\",\"title\":\"velit\",\"payload\":12},\"refId\":\"autem\",\"referenceId\":\"veritatis\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Revoke chat conversation from handover service",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "telegram\/callback\/conversation\/handle",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/telegram\/callback\/conversation\/handle"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"recipientIds\":[\"blanditiis\"],\"title\":\"minus\",\"subTitle\":\"sequi\",\"message\":\"error\",\"refId\":\"corporis\",\"referenceId\":\"excepturi\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Pass chat conversation to handover service",
+                    "request": {
+                        "url": {
+                            "protocol": "https",
+                            "host": "{{baseUrl}}",
+                            "path": "telegram\/callback\/conversation\/pass",
+                            "query": [],
+                            "raw": "https:\/\/{{baseUrl}}\/telegram\/callback\/conversation\/pass"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"recipientIds\":[\"quod\"],\"title\":\"fugit\",\"subTitle\":\"odit\",\"message\":\"et\",\"refId\":\"quia\",\"referenceId\":\"expedita\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

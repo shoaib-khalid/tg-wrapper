@@ -1,0 +1,365 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'https://tgw.symplified.biz'
+paths:
+  /telegram/incoming:
+    post:
+      summary: 'Receive a newly incoming request from telegram client'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                callback_query:
+                  type: object
+                  description: ''
+                  example: []
+                  properties:
+                    message:
+                      type: object
+                      description: ''
+                      example: []
+                      properties:
+                        chat:
+                          type: object
+                          description: ''
+                          example: []
+                          properties:
+                            id:
+                              type: integer
+                              description: ''
+                              example: 7
+                        from:
+                          type: object
+                          description: ''
+                          example: []
+                          properties:
+                            username:
+                              type: string
+                              description: ''
+                              example: error
+                        data:
+                          type: string
+                          description: ''
+                          example: consequatur
+                message:
+                  type: object
+                  description: ''
+                  example: []
+                  properties:
+                    chat:
+                      type: object
+                      description: ''
+                      example: []
+                      properties:
+                        id:
+                          type: integer
+                          description: ''
+                          example: 10
+                    from:
+                      type: object
+                      description: ''
+                      example: []
+                      properties:
+                        username:
+                          type: string
+                          description: ''
+                          example: voluptatum
+                    data:
+                      type: string
+                      description: ''
+                      example: in
+      security: []
+  /telegram/callback/textmessage/push:
+    post:
+      summary: 'Sent a single text message to telegram client'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                recipientIds:
+                  type: array
+                  description: ''
+                  example:
+                    - dolore
+                  items:
+                    type: string
+                title:
+                  type: string
+                  description: ''
+                  example: deserunt
+                subTitle:
+                  type: string
+                  description: ''
+                  example: veniam
+                message:
+                  type: string
+                  description: ''
+                  example: aspernatur
+                refId:
+                  type: string
+                  description: ''
+                  example: amet
+                referenceId:
+                  type: string
+                  description: ''
+                  example: mollitia
+              required:
+                - recipientIds
+                - title
+                - message
+                - refId
+                - referenceId
+      security: []
+  /telegram/callback/menumessage/push:
+    post:
+      summary: 'Send Menu Messages to telegram client'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                recipientIds:
+                  type: array
+                  description: ''
+                  example:
+                    - voluptates
+                  items:
+                    type: string
+                title:
+                  type: string
+                  description: ''
+                  example: non
+                subTitle:
+                  type: string
+                  description: ''
+                  example: ullam
+                menuItems:
+                  type: object
+                  description: ''
+                  example: []
+                  properties:
+                    type:
+                      type: string
+                      description: ''
+                      example: enim
+                    title:
+                      type: string
+                      description: ''
+                      example: velit
+                    payload:
+                      type: integer
+                      description: ''
+                      example: 12
+                refId:
+                  type: string
+                  description: ''
+                  example: autem
+                referenceId:
+                  type: string
+                  description: ''
+                  example: veritatis
+              required:
+                - recipientIds
+                - title
+                - subTitle
+                - refId
+                - referenceId
+      security: []
+  /telegram/callback/conversation/handle:
+    post:
+      summary: 'Revoke chat conversation from handover service'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                recipientIds:
+                  type: array
+                  description: ''
+                  example:
+                    - blanditiis
+                  items:
+                    type: string
+                title:
+                  type: string
+                  description: ''
+                  example: minus
+                subTitle:
+                  type: string
+                  description: ''
+                  example: sequi
+                message:
+                  type: string
+                  description: ''
+                  example: error
+                refId:
+                  type: string
+                  description: ''
+                  example: corporis
+                referenceId:
+                  type: string
+                  description: ''
+                  example: excepturi
+              required:
+                - recipientIds
+                - title
+                - subTitle
+                - message
+                - refId
+                - referenceId
+      security: []
+  /telegram/callback/conversation/pass:
+    post:
+      summary: 'Pass chat conversation to handover service'
+      description: ''
+      parameters:
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                recipientIds:
+                  type: array
+                  description: ''
+                  example:
+                    - quod
+                  items:
+                    type: string
+                title:
+                  type: string
+                  description: ''
+                  example: fugit
+                subTitle:
+                  type: string
+                  description: ''
+                  example: odit
+                message:
+                  type: string
+                  description: ''
+                  example: et
+                refId:
+                  type: string
+                  description: ''
+                  example: quia
+                referenceId:
+                  type: string
+                  description: ''
+                  example: expedita
+              required:
+                - recipientIds
+                - title
+                - subTitle
+                - message
+                - refId
+                - referenceId
+      security: []
