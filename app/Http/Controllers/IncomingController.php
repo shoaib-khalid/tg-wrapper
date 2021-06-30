@@ -50,7 +50,7 @@ class IncomingController extends Controller
         } else if (isset($request['message'])) {
             $userId = $request["message"]["chat"]["id"];
             $username = "@".$request["message"]["from"]["username"]; // will be use as reference id
-            $message = $request["message"]["data"];
+            $message = $request["message"]["text"];
         } else {
             return response()->json(
                 [
