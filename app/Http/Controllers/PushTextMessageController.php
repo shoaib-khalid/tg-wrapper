@@ -15,6 +15,12 @@ class PushTextMessageController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request) {
+
+        \Log::channel('transaction')->info("LOG Start Push TextMessage ------------------------------------------------");
+        \Log::channel('transaction')->info("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
+        \Log::channel('transaction')->info("Backend -> HEADER", $request->header());
+        \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
+
         $validate = Validator::make(
             $request->all(), [ 
                 'recipientIds' => 'required|array',
@@ -24,9 +30,9 @@ class PushTextMessageController extends Controller
                 'refId' => 'required|string',
                 'referenceId' => 'required|string',
             ]);
-
-        if ($validate->fails()) {
-            return response()->json(
+            
+            if ($validate->fails()) {
+                return response()->json(
                 [
                     'status' => false,
                     'errors' => $validate->errors(),
@@ -55,10 +61,6 @@ class PushTextMessageController extends Controller
             );
         }
 
-        \Log::channel('transaction')->info("LOG Start Push TextMessage ------------------------------------------------");
-        \Log::channel('transaction')->info("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
-        \Log::channel('transaction')->info("Backend -> HEADER", $request->header());
-        \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
 
         $textmessage = "*" . $request["title"] . "*" . "\n" .
                     //    "`" . $request["subTitle"] . "`" . "\n\n" . 

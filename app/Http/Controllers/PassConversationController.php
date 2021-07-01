@@ -9,13 +9,19 @@ use \App\Models\LiveAgentModel;
 
 class PassConversationController extends Controller
 {
-  /**
+    /**
      * Pass chat conversation to handover service
      *
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request) {
+
+        \Log::channel('transaction')->info("LOG Start Pass Conversation ------------------------------------------------");
+        \Log::channel('transaction')->info("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
+        \Log::channel('transaction')->info("Backend -> HEADER", $request->header());
+        \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
+
         $validate = Validator::make(
             $request->all(), [ 
                 'recipientIds' => 'required|array',
@@ -24,7 +30,7 @@ class PassConversationController extends Controller
                 'message' => 'required|string',
                 'refId' => 'required|string',
                 'referenceId' => 'required|string',
-            ]
+                ]
         );
 
         if ($validate->fails()) {
@@ -47,10 +53,6 @@ class PassConversationController extends Controller
             );
         }
 
-        \Log::channel('transaction')->info("LOG Start Pass Conversation ------------------------------------------------");
-        \Log::channel('transaction')->info("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
-        \Log::channel('transaction')->info("Backend -> HEADER", $request->header());
-        \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
         
         $userId=$request["recipientIds"][0];
         $referenceId=$request["referenceId"];

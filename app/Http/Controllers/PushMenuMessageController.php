@@ -16,6 +16,11 @@ class PushMenuMessageController extends Controller
      */
     public function store(Request $request) {
         
+        \Log::channel('transaction')->info("LOG Start Push MenuMessage ------------------------------------------------");
+        \Log::channel('transaction')->info("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
+        \Log::channel('transaction')->info("Backend -> HEADER", $request->header());
+        \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
+        
         $validate = Validator::make(
             $request->all(), [ 
                 'recipientIds' => 'required|array',
@@ -53,10 +58,6 @@ class PushMenuMessageController extends Controller
             );
         }
 
-        \Log::channel('transaction')->info("LOG Start Push MenuMessage ------------------------------------------------");
-        \Log::channel('transaction')->info("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
-        \Log::channel('transaction')->info("Backend -> HEADER", $request->header());
-        \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
 
         // generating menu options
         $textHeader = "*" . $request["title"] . "*" . "\n" . $request["subTitle"];
