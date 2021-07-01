@@ -39,7 +39,7 @@ endpoints:
         name: callback_query.message.chat.id
         description: ''
         required: false
-        example: 7
+        example: 11
         type: integer
       callback_query.message.from:
         name: callback_query.message.from
@@ -51,13 +51,13 @@ endpoints:
         name: callback_query.message.from.username
         description: ''
         required: false
-        example: error
+        example: et
         type: string
       callback_query.message.data:
         name: callback_query.message.data
         description: ''
         required: false
-        example: consequatur
+        example: accusamus
         type: string
       message:
         name: message
@@ -75,7 +75,7 @@ endpoints:
         name: message.chat.id
         description: ''
         required: false
-        example: 10
+        example: 9
         type: integer
       message.from:
         name: message.from
@@ -87,13 +87,13 @@ endpoints:
         name: message.from.username
         description: ''
         required: false
-        example: voluptatum
+        example: repellat
         type: string
       message.data:
         name: message.data
         description: ''
         required: false
-        example: in
+        example: deserunt
         type: string
     responses: []
     responseFields: []
@@ -122,31 +122,31 @@ endpoints:
         name: title
         description: ''
         required: true
-        example: deserunt
+        example: sed
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: false
-        example: veniam
+        example: sed
         type: string
       message:
         name: message
         description: ''
         required: true
-        example: aspernatur
+        example: enim
         type: string
       refId:
         name: refId
         description: ''
         required: true
-        example: amet
+        example: quae
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: mollitia
+        example: animi
         type: string
     responses: []
     responseFields: []
@@ -169,56 +169,57 @@ endpoints:
         description: ''
         required: true
         example:
-          - voluptates
+          - saepe
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: non
+        example: facilis
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: true
-        example: ullam
+        example: aperiam
         type: string
       menuItems:
         name: menuItems
         description: ''
         required: false
-        example: []
-        type: object
-      menuItems.type:
-        name: menuItems.type
-        description: ''
-        required: true
-        example: enim
-        type: string
-      menuItems.title:
-        name: menuItems.title
-        description: ''
-        required: true
-        example: velit
-        type: string
-      menuItems.payload:
-        name: menuItems.payload
-        description: ''
-        required: true
-        example: 12
-        type: integer
+        example:
+          - []
+        type: 'object[]'
       refId:
         name: refId
         description: ''
         required: true
-        example: autem
+        example: possimus
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
+        example: beatae
+        type: string
+      'menuItems[].type':
+        name: 'menuItems[].type'
+        description: ''
+        required: true
+        example: a
+        type: string
+      'menuItems[].title':
+        name: 'menuItems[].title'
+        description: ''
+        required: true
         example: veritatis
         type: string
+      'menuItems[].payload':
+        name: 'menuItems[].payload'
+        description: ''
+        required: true
+        example: 17
+        type: integer
     responses: []
     responseFields: []
   -
@@ -240,37 +241,37 @@ endpoints:
         description: ''
         required: true
         example:
-          - blanditiis
+          - error
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: minus
+        example: in
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: true
-        example: sequi
+        example: aut
         type: string
       message:
         name: message
         description: ''
         required: true
-        example: error
+        example: doloribus
         type: string
       refId:
         name: refId
         description: ''
         required: true
-        example: corporis
+        example: magnam
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: excepturi
+        example: culpa
         type: string
     responses: []
     responseFields: []
@@ -293,37 +294,37 @@ endpoints:
         description: ''
         required: true
         example:
-          - quod
+          - voluptatem
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: fugit
+        example: nemo
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: true
-        example: odit
+        example: nisi
         type: string
       message:
         name: message
         description: ''
         required: true
-        example: et
+        example: numquam
         type: string
       refId:
         name: refId
         description: ''
         required: true
-        example: quia
+        example: fugiat
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: expedita
+        example: cum
         type: string
     responses: []
     responseFields: []

@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "b1257509-80a0-4fdf-9153-9b0aa3fbb108",
+        "_postman_id": "318056be-b087-4290-8dfd-4edc0285ff75",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -42,7 +42,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"callback_query\":{\"message\":{\"chat\":{\"id\":7},\"from\":{\"username\":\"error\"},\"data\":\"consequatur\"}},\"message\":{\"chat\":{\"id\":10},\"from\":{\"username\":\"voluptatum\"},\"data\":\"in\"}}"
+                            "raw": "{\"callback_query\":{\"message\":{\"chat\":{\"id\":11},\"from\":{\"username\":\"et\"},\"data\":\"accusamus\"}},\"message\":{\"chat\":{\"id\":9},\"from\":{\"username\":\"repellat\"},\"data\":\"deserunt\"}}"
                         },
                         "description": "",
                         "auth": {
@@ -74,7 +74,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"recipientIds\":[\"dolore\"],\"title\":\"deserunt\",\"subTitle\":\"veniam\",\"message\":\"aspernatur\",\"refId\":\"amet\",\"referenceId\":\"mollitia\"}"
+                            "raw": "{\"recipientIds\":[\"dolore\"],\"title\":\"sed\",\"subTitle\":\"sed\",\"message\":\"enim\",\"refId\":\"quae\",\"referenceId\":\"animi\"}"
                         },
                         "description": "",
                         "auth": {
@@ -106,7 +106,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"recipientIds\":[\"voluptates\"],\"title\":\"non\",\"subTitle\":\"ullam\",\"menuItems\":{\"type\":\"enim\",\"title\":\"velit\",\"payload\":12},\"refId\":\"autem\",\"referenceId\":\"veritatis\"}"
+                            "raw": "{\"recipientIds\":[\"saepe\"],\"title\":\"facilis\",\"subTitle\":\"aperiam\",\"menuItems\":[{\"type\":\"a\",\"title\":\"veritatis\",\"payload\":17}],\"refId\":\"possimus\",\"referenceId\":\"beatae\"}"
                         },
                         "description": "",
                         "auth": {
@@ -138,7 +138,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"recipientIds\":[\"blanditiis\"],\"title\":\"minus\",\"subTitle\":\"sequi\",\"message\":\"error\",\"refId\":\"corporis\",\"referenceId\":\"excepturi\"}"
+                            "raw": "{\"recipientIds\":[\"error\"],\"title\":\"in\",\"subTitle\":\"aut\",\"message\":\"doloribus\",\"refId\":\"magnam\",\"referenceId\":\"culpa\"}"
                         },
                         "description": "",
                         "auth": {
@@ -170,7 +170,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"recipientIds\":[\"quod\"],\"title\":\"fugit\",\"subTitle\":\"odit\",\"message\":\"et\",\"refId\":\"quia\",\"referenceId\":\"expedita\"}"
+                            "raw": "{\"recipientIds\":[\"voluptatem\"],\"title\":\"nemo\",\"subTitle\":\"nisi\",\"message\":\"numquam\",\"refId\":\"fugiat\",\"referenceId\":\"cum\"}"
                         },
                         "description": "",
                         "auth": {

@@ -51,7 +51,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
             <ul class="toc-footer" id="last-updated">
-            <li>Last updated: June 30 2021</li>
+            <li>Last updated: July 1 2021</li>
         </ul>
 </div>
 <div class="page-wrapper">
@@ -92,22 +92,22 @@ You can switch the language used with the tabs at the top right (or from the nav
     \"callback_query\": {
         \"message\": {
             \"chat\": {
-                \"id\": 7
+                \"id\": 11
             },
             \"from\": {
-                \"username\": \"error\"
+                \"username\": \"et\"
             },
-            \"data\": \"consequatur\"
+            \"data\": \"accusamus\"
         }
     },
     \"message\": {
         \"chat\": {
-            \"id\": 10
+            \"id\": 9
         },
         \"from\": {
-            \"username\": \"voluptatum\"
+            \"username\": \"repellat\"
         },
-        \"data\": \"in\"
+        \"data\": \"deserunt\"
     }
 }"
 </code></pre>
@@ -125,22 +125,22 @@ let body = {
     "callback_query": {
         "message": {
             "chat": {
-                "id": 7
+                "id": 11
             },
             "from": {
-                "username": "error"
+                "username": "et"
             },
-            "data": "consequatur"
+            "data": "accusamus"
         }
     },
     "message": {
         "chat": {
-            "id": 10
+            "id": 9
         },
         "from": {
-            "username": "voluptatum"
+            "username": "repellat"
         },
-        "data": "in"
+        "data": "deserunt"
     }
 }
 
@@ -318,11 +318,11 @@ fetch(url, {
     \"recipientIds\": [
         \"dolore\"
     ],
-    \"title\": \"deserunt\",
-    \"subTitle\": \"veniam\",
-    \"message\": \"aspernatur\",
-    \"refId\": \"amet\",
-    \"referenceId\": \"mollitia\"
+    \"title\": \"sed\",
+    \"subTitle\": \"sed\",
+    \"message\": \"enim\",
+    \"refId\": \"quae\",
+    \"referenceId\": \"animi\"
 }"
 </code></pre>
 
@@ -339,11 +339,11 @@ let body = {
     "recipientIds": [
         "dolore"
     ],
-    "title": "deserunt",
-    "subTitle": "veniam",
-    "message": "aspernatur",
-    "refId": "amet",
-    "referenceId": "mollitia"
+    "title": "sed",
+    "subTitle": "sed",
+    "message": "enim",
+    "refId": "quae",
+    "referenceId": "animi"
 }
 
 fetch(url, {
@@ -461,17 +461,19 @@ fetch(url, {
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"voluptates\"
+        \"saepe\"
     ],
-    \"title\": \"non\",
-    \"subTitle\": \"ullam\",
-    \"menuItems\": {
-        \"type\": \"enim\",
-        \"title\": \"velit\",
-        \"payload\": 12
-    },
-    \"refId\": \"autem\",
-    \"referenceId\": \"veritatis\"
+    \"title\": \"facilis\",
+    \"subTitle\": \"aperiam\",
+    \"menuItems\": [
+        {
+            \"type\": \"a\",
+            \"title\": \"veritatis\",
+            \"payload\": 17
+        }
+    ],
+    \"refId\": \"possimus\",
+    \"referenceId\": \"beatae\"
 }"
 </code></pre>
 
@@ -486,17 +488,19 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "voluptates"
+        "saepe"
     ],
-    "title": "non",
-    "subTitle": "ullam",
-    "menuItems": {
-        "type": "enim",
-        "title": "velit",
-        "payload": 12
-    },
-    "refId": "autem",
-    "referenceId": "veritatis"
+    "title": "facilis",
+    "subTitle": "aperiam",
+    "menuItems": [
+        {
+            "type": "a",
+            "title": "veritatis",
+            "payload": 17
+        }
+    ],
+    "refId": "possimus",
+    "referenceId": "beatae"
 }
 
 fetch(url, {
@@ -574,29 +578,29 @@ fetch(url, {
                 <p>
         <details>
             <summary style="padding-bottom: 10px;">
-                <b><code>menuItems</code></b>&nbsp;&nbsp;<small>object</small>     <i>optional</i> &nbsp;
+                <b><code>menuItems</code></b>&nbsp;&nbsp;<small>object[]</small>     <i>optional</i> &nbsp;
 <br>
             </summary>
                                                 <p>
-                        <b><code>menuItems.type</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                        <b><code>menuItems[].type</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
                 <input type="text"
-               name="menuItems.type"
+               name="menuItems.0.type"
                data-endpoint="POSTtelegram-callback-menumessage-push"
                data-component="body" required  hidden>
     <br>
                     </p>
                                                                 <p>
-                        <b><code>menuItems.title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                        <b><code>menuItems[].title</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
                 <input type="text"
-               name="menuItems.title"
+               name="menuItems.0.title"
                data-endpoint="POSTtelegram-callback-menumessage-push"
                data-component="body" required  hidden>
     <br>
                     </p>
                                                                 <p>
-                        <b><code>menuItems.payload</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                        <b><code>menuItems[].payload</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
                 <input type="number"
-               name="menuItems.payload"
+               name="menuItems.0.payload"
                data-endpoint="POSTtelegram-callback-menumessage-push"
                data-component="body" required  hidden>
     <br>
@@ -638,13 +642,13 @@ fetch(url, {
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"blanditiis\"
+        \"error\"
     ],
-    \"title\": \"minus\",
-    \"subTitle\": \"sequi\",
-    \"message\": \"error\",
-    \"refId\": \"corporis\",
-    \"referenceId\": \"excepturi\"
+    \"title\": \"in\",
+    \"subTitle\": \"aut\",
+    \"message\": \"doloribus\",
+    \"refId\": \"magnam\",
+    \"referenceId\": \"culpa\"
 }"
 </code></pre>
 
@@ -659,13 +663,13 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "blanditiis"
+        "error"
     ],
-    "title": "minus",
-    "subTitle": "sequi",
-    "message": "error",
-    "refId": "corporis",
-    "referenceId": "excepturi"
+    "title": "in",
+    "subTitle": "aut",
+    "message": "doloribus",
+    "refId": "magnam",
+    "referenceId": "culpa"
 }
 
 fetch(url, {
@@ -783,13 +787,13 @@ fetch(url, {
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"quod\"
+        \"voluptatem\"
     ],
-    \"title\": \"fugit\",
-    \"subTitle\": \"odit\",
-    \"message\": \"et\",
-    \"refId\": \"quia\",
-    \"referenceId\": \"expedita\"
+    \"title\": \"nemo\",
+    \"subTitle\": \"nisi\",
+    \"message\": \"numquam\",
+    \"refId\": \"fugiat\",
+    \"referenceId\": \"cum\"
 }"
 </code></pre>
 
@@ -804,13 +808,13 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "quod"
+        "voluptatem"
     ],
-    "title": "fugit",
-    "subTitle": "odit",
-    "message": "et",
-    "refId": "quia",
-    "referenceId": "expedita"
+    "title": "nemo",
+    "subTitle": "nisi",
+    "message": "numquam",
+    "refId": "fugiat",
+    "referenceId": "cum"
 }
 
 fetch(url, {

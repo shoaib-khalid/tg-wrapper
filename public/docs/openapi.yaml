@@ -54,7 +54,7 @@ paths:
                             id:
                               type: integer
                               description: ''
-                              example: 7
+                              example: 11
                         from:
                           type: object
                           description: ''
@@ -63,11 +63,11 @@ paths:
                             username:
                               type: string
                               description: ''
-                              example: error
+                              example: et
                         data:
                           type: string
                           description: ''
-                          example: consequatur
+                          example: accusamus
                 message:
                   type: object
                   description: ''
@@ -81,7 +81,7 @@ paths:
                         id:
                           type: integer
                           description: ''
-                          example: 10
+                          example: 9
                     from:
                       type: object
                       description: ''
@@ -90,11 +90,11 @@ paths:
                         username:
                           type: string
                           description: ''
-                          example: voluptatum
+                          example: repellat
                     data:
                       type: string
                       description: ''
-                      example: in
+                      example: deserunt
       security: []
   /telegram/callback/textmessage/push:
     post:
@@ -135,23 +135,23 @@ paths:
                 title:
                   type: string
                   description: ''
-                  example: deserunt
+                  example: sed
                 subTitle:
                   type: string
                   description: ''
-                  example: veniam
+                  example: sed
                 message:
                   type: string
                   description: ''
-                  example: aspernatur
+                  example: enim
                 refId:
                   type: string
                   description: ''
-                  example: amet
+                  example: quae
                 referenceId:
                   type: string
                   description: ''
-                  example: mollitia
+                  example: animi
               required:
                 - recipientIds
                 - title
@@ -192,42 +192,49 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - voluptates
+                    - saepe
                   items:
                     type: string
                 title:
                   type: string
                   description: ''
-                  example: non
+                  example: facilis
                 subTitle:
                   type: string
                   description: ''
-                  example: ullam
+                  example: aperiam
                 menuItems:
-                  type: object
+                  type: array
                   description: ''
-                  example: []
-                  properties:
-                    type:
-                      type: string
-                      description: ''
-                      example: enim
-                    title:
-                      type: string
-                      description: ''
-                      example: velit
-                    payload:
-                      type: integer
-                      description: ''
-                      example: 12
+                  example:
+                    - []
+                  items:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        description: ''
+                        example: a
+                      title:
+                        type: string
+                        description: ''
+                        example: veritatis
+                      payload:
+                        type: integer
+                        description: ''
+                        example: 17
+                    required:
+                      - type
+                      - title
+                      - payload
                 refId:
                   type: string
                   description: ''
-                  example: autem
+                  example: possimus
                 referenceId:
                   type: string
                   description: ''
-                  example: veritatis
+                  example: beatae
               required:
                 - recipientIds
                 - title
@@ -268,29 +275,29 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - blanditiis
+                    - error
                   items:
                     type: string
                 title:
                   type: string
                   description: ''
-                  example: minus
+                  example: in
                 subTitle:
                   type: string
                   description: ''
-                  example: sequi
+                  example: aut
                 message:
                   type: string
                   description: ''
-                  example: error
+                  example: doloribus
                 refId:
                   type: string
                   description: ''
-                  example: corporis
+                  example: magnam
                 referenceId:
                   type: string
                   description: ''
-                  example: excepturi
+                  example: culpa
               required:
                 - recipientIds
                 - title
@@ -332,29 +339,29 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - quod
+                    - voluptatem
                   items:
                     type: string
                 title:
                   type: string
                   description: ''
-                  example: fugit
+                  example: nemo
                 subTitle:
                   type: string
                   description: ''
-                  example: odit
+                  example: nisi
                 message:
                   type: string
                   description: ''
-                  example: et
+                  example: numquam
                 refId:
                   type: string
                   description: ''
-                  example: quia
+                  example: fugiat
                 referenceId:
                   type: string
                   description: ''
-                  example: expedita
+                  example: cum
               required:
                 - recipientIds
                 - title
