@@ -69,15 +69,42 @@ class PushMenuMessageController extends Controller
 
             $option = [];
             $unicodeNo = $no . ". " . $menuItem['title'];
-            $option = [
+            $option = [[
                 "text" => $unicodeNo,
                 "callback_data" => $no
-            ];
+            ]];
             array_push($menu,$option);        
         }
 
         $keyboard = [
-            'inline_keyboard' => array($menu)
+            // 'inline_keyboard' => array($menu)
+            // 'inline_keyboard' => array(
+            //     [
+            //         [
+            //             "text" => "Test",
+            //             "callback_data" => 1
+            //         ],
+            //         [
+            //             "text" => "Test",
+            //             "callback_data" => 1
+            //         ]
+            //     ]
+            // )
+            'inline_keyboard' => $menu
+            // 'inline_keyboard' => array(
+            //     [
+            //         [
+            //             "text" => "Test",
+            //             "callback_data" => 1
+            //         ]
+            //     ],
+            //     [
+            //         [
+            //             "text" => "Test",
+            //             "callback_data" => 1
+            //         ]
+            //     ]
+            // )
         ];
 
         // calling telegram

@@ -41,7 +41,21 @@ class TelegramModel extends Model
                 'chat_id' => $msisdn,
                 'text' => $message,
                 'parse_mode' => 'markdown',
-                'reply_markup' => json_encode($replyMessage,true)
+                'reply_markup' => 
+                // json_encode(
+                //    [
+                //     '_' => 'replyKeyboardMarkup', 'rows' => [
+                //         ['_' => 'keyboardButtonRow', 'buttons' =>[
+                //             ['_' => 'keyboardButton', 'text' => 'Help'],
+                //             ['_' => 'keyboardButton', 'text' => 'Gallery']
+                //         ]],
+                //         ['_' => 'keyboardButtonRow', 'buttons' =>[
+                //             ['_' => 'keyboardButton', 'text' => 'Add'],
+                //             ['_' => 'keyboardButton', 'text' => 'Statistics']
+                //         ]]
+                //     ]
+                // ],true)
+                json_encode($replyMessage,true)
             ];
         } else {
             // for text messages
