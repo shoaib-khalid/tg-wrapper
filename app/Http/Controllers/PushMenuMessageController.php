@@ -22,9 +22,9 @@ class PushMenuMessageController extends Controller
                 'title' => 'required|string',
                 'subTitle' => 'required|string',
                 'menuItems' => 'required|array',
-                'menuItems.type' => 'required|string',
-                'menuItems.title' => 'required|string',
-                'menuItems.payload' => 'required|integer',
+                'menuItems.*.type' => 'required|string',
+                'menuItems.*.title' => 'required|string',
+                'menuItems.*.payload' => 'required|integer',
                 'refId' => 'required|string',
                 'referenceId' => 'required|string',
             ]);
