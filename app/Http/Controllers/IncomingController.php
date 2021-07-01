@@ -15,7 +15,7 @@ class IncomingController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request) {
+    public function store(Request $request, $botid) {
 
         $validator = Validator::make(
             $request->all(), [ 
@@ -60,15 +60,15 @@ class IncomingController extends Controller
                 400
             );
         }
-
+        \Log::channel('transaction')->info("LOG Start ------------------------------------------------");
         \Log::channel('transaction')->info("Telegram -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
         \Log::channel('transaction')->info("Telegram -> HEADER", $request->header());
         \Log::channel('transaction')->info("Telegram -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
 
         // determine routing
-        $backend = new BackendModel($userId,$message,"@SymplifiedBot");
+        $backend = new BackendModel($userId,$message,$botid);
         $backend->send();
-
+        \Log::channel('transaction')->info("LOG End ------------------------------------------------");
     }//end store()
 
 

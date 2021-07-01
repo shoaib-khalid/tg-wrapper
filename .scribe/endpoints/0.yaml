@@ -4,7 +4,7 @@ endpoints:
   -
     httpMethods:
       - POST
-    uri: telegram/incoming
+    uri: 'telegram/incoming/{botid}'
     metadata:
       title: 'Receive a newly incoming request from telegram client'
       description: ''
@@ -12,7 +12,13 @@ endpoints:
     headers:
       Content-Type: application/json
       Accept: application/json
-    urlParameters: []
+    urlParameters:
+      botid:
+        name: botid
+        description: ''
+        required: true
+        example: similique
+        type: string
     queryParameters: []
     bodyParameters:
       callback_query:
@@ -37,7 +43,7 @@ endpoints:
         name: callback_query.message.chat.id
         description: ''
         required: false
-        example: 11
+        example: 12
         type: integer
       callback_query.message.from:
         name: callback_query.message.from
@@ -49,13 +55,13 @@ endpoints:
         name: callback_query.message.from.username
         description: ''
         required: false
-        example: et
+        example: doloremque
         type: string
       callback_query.message.data:
         name: callback_query.message.data
         description: ''
         required: false
-        example: accusamus
+        example: laborum
         type: string
       message:
         name: message
@@ -73,7 +79,7 @@ endpoints:
         name: message.chat.id
         description: ''
         required: false
-        example: 9
+        example: 6
         type: integer
       message.from:
         name: message.from
@@ -85,13 +91,13 @@ endpoints:
         name: message.from.username
         description: ''
         required: false
-        example: repellat
+        example: deleniti
         type: string
       message.data:
         name: message.data
         description: ''
         required: false
-        example: deserunt
+        example: sequi
         type: string
     responses: []
     responseFields: []
@@ -114,37 +120,37 @@ endpoints:
         description: ''
         required: true
         example:
-          - dolore
+          - iure
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: sed
+        example: et
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: false
-        example: sed
+        example: blanditiis
         type: string
       message:
         name: message
         description: ''
         required: true
-        example: enim
+        example: molestias
         type: string
       refId:
         name: refId
         description: ''
         required: true
-        example: quae
+        example: quo
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: animi
+        example: perspiciatis
         type: string
     responses: []
     responseFields: []
@@ -167,19 +173,19 @@ endpoints:
         description: ''
         required: true
         example:
-          - saepe
+          - fuga
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: facilis
+        example: nesciunt
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: true
-        example: aperiam
+        example: id
         type: string
       menuItems:
         name: menuItems
@@ -192,25 +198,25 @@ endpoints:
         name: refId
         description: ''
         required: true
-        example: possimus
+        example: nesciunt
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: beatae
+        example: rerum
         type: string
       'menuItems[].type':
         name: 'menuItems[].type'
         description: ''
         required: true
-        example: a
+        example: atque
         type: string
       'menuItems[].title':
         name: 'menuItems[].title'
         description: ''
         required: true
-        example: veritatis
+        example: eaque
         type: string
       'menuItems[].payload':
         name: 'menuItems[].payload'
@@ -239,37 +245,37 @@ endpoints:
         description: ''
         required: true
         example:
-          - error
+          - optio
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: in
+        example: nihil
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: true
-        example: aut
+        example: ratione
         type: string
       message:
         name: message
         description: ''
         required: true
-        example: doloribus
+        example: rerum
         type: string
       refId:
         name: refId
         description: ''
         required: true
-        example: magnam
+        example: nemo
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: culpa
+        example: et
         type: string
     responses: []
     responseFields: []
@@ -292,37 +298,37 @@ endpoints:
         description: ''
         required: true
         example:
-          - voluptatem
+          - eos
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: nemo
+        example: et
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: true
-        example: nisi
+        example: recusandae
         type: string
       message:
         name: message
         description: ''
         required: true
-        example: numquam
+        example: exercitationem
         type: string
       refId:
         name: refId
         description: ''
         required: true
-        example: fugiat
+        example: magni
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: cum
+        example: et
         type: string
     responses: []
     responseFields: []

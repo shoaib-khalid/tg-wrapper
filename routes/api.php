@@ -20,7 +20,7 @@ Route::group(
         'namespace'  => 'App\Http\Controllers',
     ],
     function ($router) {
-        Route::post('incoming/', 'IncomingController@store');
+        Route::post('incoming/{botid}', 'IncomingController@store');
         Route::post('callback/textmessage/push/', 'PushTextMessageController@store');
         Route::post('callback/menumessage/push/', 'PushMenuMessageController@store');
         Route::post('callback/conversation/handle/', 'HandleConversationController@store');
@@ -28,6 +28,9 @@ Route::group(
     }
 );
 
+/**
+ * @hideFromAPIDocumentation
+ */
 Route::fallback(function () {
     //Send to 404 or whatever here.
     return abort(404);

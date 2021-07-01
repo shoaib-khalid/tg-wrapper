@@ -55,6 +55,7 @@ class PushTextMessageController extends Controller
             );
         }
 
+        \Log::channel('transaction')->info("LOG Start ------------------------------------------------");
         \Log::channel('transaction')->info("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
         \Log::channel('transaction')->info("Backend -> HEADER", $request->header());
         \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
@@ -66,6 +67,6 @@ class PushTextMessageController extends Controller
         // calling telegram
         $telegram = new TelegramModel($request["recipientIds"][0],$textmessage);
         $telegram->send();
-
+        \Log::channel('transaction')->info("LOG End ------------------------------------------------");
     }
 }

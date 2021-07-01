@@ -74,7 +74,7 @@ You can switch the language used with the tabs at the top right (or from the nav
         
     </p>
 
-            <h2 id="endpoints-POSTtelegram-incoming">Receive a newly incoming request from telegram client</h2>
+            <h2 id="endpoints-POSTtelegram-incoming--botid-">Receive a newly incoming request from telegram client</h2>
 
 <p>
 </p>
@@ -85,35 +85,35 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 
 <pre><code class="language-bash">curl --request POST \
-    "https://tgw.symplified.biz/telegram/incoming" \
+    "https://tgw.symplified.biz/telegram/incoming/similique" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"callback_query\": {
         \"message\": {
             \"chat\": {
-                \"id\": 11
+                \"id\": 12
             },
             \"from\": {
-                \"username\": \"et\"
+                \"username\": \"doloremque\"
             },
-            \"data\": \"accusamus\"
+            \"data\": \"laborum\"
         }
     },
     \"message\": {
         \"chat\": {
-            \"id\": 9
+            \"id\": 6
         },
         \"from\": {
-            \"username\": \"repellat\"
+            \"username\": \"deleniti\"
         },
-        \"data\": \"deserunt\"
+        \"data\": \"sequi\"
     }
 }"
 </code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "https://tgw.symplified.biz/telegram/incoming"
+    "https://tgw.symplified.biz/telegram/incoming/similique"
 );
 
 let headers = {
@@ -125,22 +125,22 @@ let body = {
     "callback_query": {
         "message": {
             "chat": {
-                "id": 11
+                "id": 12
             },
             "from": {
-                "username": "et"
+                "username": "doloremque"
             },
-            "data": "accusamus"
+            "data": "laborum"
         }
     },
     "message": {
         "chat": {
-            "id": 9
+            "id": 6
         },
         "from": {
-            "username": "repellat"
+            "username": "deleniti"
         },
-        "data": "deserunt"
+        "data": "sequi"
     }
 }
 
@@ -150,43 +150,52 @@ fetch(url, {
     body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre>
 
-<div id="execution-results-POSTtelegram-incoming" hidden>
+<div id="execution-results-POSTtelegram-incoming--botid-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-POSTtelegram-incoming"></span>:
+                id="execution-response-status-POSTtelegram-incoming--botid-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTtelegram-incoming"></code></pre>
+    <pre class="json"><code id="execution-response-content-POSTtelegram-incoming--botid-"></code></pre>
 </div>
-<div id="execution-error-POSTtelegram-incoming" hidden>
+<div id="execution-error-POSTtelegram-incoming--botid-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTtelegram-incoming"></code></pre>
+    <pre><code id="execution-error-message-POSTtelegram-incoming--botid-"></code></pre>
 </div>
-<form id="form-POSTtelegram-incoming" data-method="POST"
-      data-path="telegram/incoming"
+<form id="form-POSTtelegram-incoming--botid-" data-method="POST"
+      data-path="telegram/incoming/{botid}"
       data-authed="0"
       data-hasfiles="0"
       data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
-      onsubmit="event.preventDefault(); executeTryOut('POSTtelegram-incoming', this);">
+      onsubmit="event.preventDefault(); executeTryOut('POSTtelegram-incoming--botid-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTtelegram-incoming"
-                    onclick="tryItOut('POSTtelegram-incoming');">Try it out ⚡
+                    id="btn-tryout-POSTtelegram-incoming--botid-"
+                    onclick="tryItOut('POSTtelegram-incoming--botid-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTtelegram-incoming"
-                    onclick="cancelTryOut('POSTtelegram-incoming');" hidden>Cancel
+                    id="btn-canceltryout-POSTtelegram-incoming--botid-"
+                    onclick="cancelTryOut('POSTtelegram-incoming--botid-');" hidden>Cancel
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTtelegram-incoming" hidden>Send Request 💥
+                    id="btn-executetryout-POSTtelegram-incoming--botid-" hidden>Send Request 💥
             </button>
             </h3>
             <p>
             <small class="badge badge-black">POST</small>
-            <b><code>telegram/incoming</code></b>
+            <b><code>telegram/incoming/{botid}</code></b>
         </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>botid</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="botid"
+               data-endpoint="POSTtelegram-incoming--botid-"
+               data-component="url" required  hidden>
+    <br>
+            </p>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <p>
         <details>
@@ -210,7 +219,7 @@ fetch(url, {
                         <b><code>callback_query.message.chat.id</code></b>&nbsp;&nbsp;<small>integer</small>     <i>optional</i> &nbsp;
                 <input type="number"
                name="callback_query.message.chat.id"
-               data-endpoint="POSTtelegram-incoming"
+               data-endpoint="POSTtelegram-incoming--botid-"
                data-component="body"  hidden>
     <br>
                     </p>
@@ -227,7 +236,7 @@ fetch(url, {
                         <b><code>callback_query.message.from.username</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
                 <input type="text"
                name="callback_query.message.from.username"
-               data-endpoint="POSTtelegram-incoming"
+               data-endpoint="POSTtelegram-incoming--botid-"
                data-component="body"  hidden>
     <br>
                     </p>
@@ -238,7 +247,7 @@ fetch(url, {
                         <b><code>callback_query.message.data</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
                 <input type="text"
                name="callback_query.message.data"
-               data-endpoint="POSTtelegram-incoming"
+               data-endpoint="POSTtelegram-incoming--botid-"
                data-component="body"  hidden>
     <br>
                     </p>
@@ -263,7 +272,7 @@ fetch(url, {
                         <b><code>message.chat.id</code></b>&nbsp;&nbsp;<small>integer</small>     <i>optional</i> &nbsp;
                 <input type="number"
                name="message.chat.id"
-               data-endpoint="POSTtelegram-incoming"
+               data-endpoint="POSTtelegram-incoming--botid-"
                data-component="body"  hidden>
     <br>
                     </p>
@@ -280,7 +289,7 @@ fetch(url, {
                         <b><code>message.from.username</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
                 <input type="text"
                name="message.from.username"
-               data-endpoint="POSTtelegram-incoming"
+               data-endpoint="POSTtelegram-incoming--botid-"
                data-component="body"  hidden>
     <br>
                     </p>
@@ -291,7 +300,7 @@ fetch(url, {
                         <b><code>message.data</code></b>&nbsp;&nbsp;<small>string</small>     <i>optional</i> &nbsp;
                 <input type="text"
                name="message.data"
-               data-endpoint="POSTtelegram-incoming"
+               data-endpoint="POSTtelegram-incoming--botid-"
                data-component="body"  hidden>
     <br>
                     </p>
@@ -316,13 +325,13 @@ fetch(url, {
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"dolore\"
+        \"iure\"
     ],
-    \"title\": \"sed\",
-    \"subTitle\": \"sed\",
-    \"message\": \"enim\",
-    \"refId\": \"quae\",
-    \"referenceId\": \"animi\"
+    \"title\": \"et\",
+    \"subTitle\": \"blanditiis\",
+    \"message\": \"molestias\",
+    \"refId\": \"quo\",
+    \"referenceId\": \"perspiciatis\"
 }"
 </code></pre>
 
@@ -337,13 +346,13 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "dolore"
+        "iure"
     ],
-    "title": "sed",
-    "subTitle": "sed",
-    "message": "enim",
-    "refId": "quae",
-    "referenceId": "animi"
+    "title": "et",
+    "subTitle": "blanditiis",
+    "message": "molestias",
+    "refId": "quo",
+    "referenceId": "perspiciatis"
 }
 
 fetch(url, {
@@ -461,19 +470,19 @@ fetch(url, {
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"saepe\"
+        \"fuga\"
     ],
-    \"title\": \"facilis\",
-    \"subTitle\": \"aperiam\",
+    \"title\": \"nesciunt\",
+    \"subTitle\": \"id\",
     \"menuItems\": [
         {
-            \"type\": \"a\",
-            \"title\": \"veritatis\",
+            \"type\": \"atque\",
+            \"title\": \"eaque\",
             \"payload\": 17
         }
     ],
-    \"refId\": \"possimus\",
-    \"referenceId\": \"beatae\"
+    \"refId\": \"nesciunt\",
+    \"referenceId\": \"rerum\"
 }"
 </code></pre>
 
@@ -488,19 +497,19 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "saepe"
+        "fuga"
     ],
-    "title": "facilis",
-    "subTitle": "aperiam",
+    "title": "nesciunt",
+    "subTitle": "id",
     "menuItems": [
         {
-            "type": "a",
-            "title": "veritatis",
+            "type": "atque",
+            "title": "eaque",
             "payload": 17
         }
     ],
-    "refId": "possimus",
-    "referenceId": "beatae"
+    "refId": "nesciunt",
+    "referenceId": "rerum"
 }
 
 fetch(url, {
@@ -642,13 +651,13 @@ fetch(url, {
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"error\"
+        \"optio\"
     ],
-    \"title\": \"in\",
-    \"subTitle\": \"aut\",
-    \"message\": \"doloribus\",
-    \"refId\": \"magnam\",
-    \"referenceId\": \"culpa\"
+    \"title\": \"nihil\",
+    \"subTitle\": \"ratione\",
+    \"message\": \"rerum\",
+    \"refId\": \"nemo\",
+    \"referenceId\": \"et\"
 }"
 </code></pre>
 
@@ -663,13 +672,13 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "error"
+        "optio"
     ],
-    "title": "in",
-    "subTitle": "aut",
-    "message": "doloribus",
-    "refId": "magnam",
-    "referenceId": "culpa"
+    "title": "nihil",
+    "subTitle": "ratione",
+    "message": "rerum",
+    "refId": "nemo",
+    "referenceId": "et"
 }
 
 fetch(url, {
@@ -787,13 +796,13 @@ fetch(url, {
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"voluptatem\"
+        \"eos\"
     ],
-    \"title\": \"nemo\",
-    \"subTitle\": \"nisi\",
-    \"message\": \"numquam\",
-    \"refId\": \"fugiat\",
-    \"referenceId\": \"cum\"
+    \"title\": \"et\",
+    \"subTitle\": \"recusandae\",
+    \"message\": \"exercitationem\",
+    \"refId\": \"magni\",
+    \"referenceId\": \"et\"
 }"
 </code></pre>
 
@@ -808,13 +817,13 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "voluptatem"
+        "eos"
     ],
-    "title": "nemo",
-    "subTitle": "nisi",
-    "message": "numquam",
-    "refId": "fugiat",
-    "referenceId": "cum"
+    "title": "et",
+    "subTitle": "recusandae",
+    "message": "exercitationem",
+    "refId": "magni",
+    "referenceId": "et"
 }
 
 fetch(url, {

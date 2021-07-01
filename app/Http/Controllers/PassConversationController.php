@@ -47,6 +47,7 @@ class PassConversationController extends Controller
             );
         }
 
+        \Log::channel('transaction')->info("LOG Start ------------------------------------------------");
         \Log::channel('transaction')->info("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
         \Log::channel('transaction')->info("Backend -> HEADER", $request->header());
         \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
@@ -62,5 +63,6 @@ class PassConversationController extends Controller
         // determine routing
         $backend = new BackendModel($userId,$msgToCS,"@SymplifiedBot");
         $backend->send();
+        \Log::channel('transaction')->info("LOG End ------------------------------------------------");
     }
 }
