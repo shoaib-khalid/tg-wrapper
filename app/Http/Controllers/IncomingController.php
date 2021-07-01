@@ -47,21 +47,16 @@ class IncomingController extends Controller
             $userId = $request["callback_query"]["message"]["chat"]["id"];
             $username = "@".$request["callback_query"]["message"]["from"]["username"]; // will be use as reference id
             $message = $request["callback_query"]["data"];
-        } else {
+        } else if (isset($request['message'])) {
             $userId = $request["message"]["chat"]["id"];
             $username = "@".$request["message"]["from"]["username"]; // will be use as reference id
             $message = $request["message"]["text"];
+        } else {
+            // default to symplified ... 
+            $userId = $request["message"]["chat"]["id"];
+            $username = "@".$request["message"]["from"]["username"]; // will be use as reference id
+            $message = "You are sending features that are not yet supported";
         }
-        
-        // else {
-        //     return response()->json(
-        //         [
-        //             'status' => false,
-        //             'errors' => "Either callback query field or message field can't be null",
-        //         ],
-        //         400
-        //     );
-        // }
 
         
         \Log::channel('transaction')->info("LOG Start Incoming ------------------------------------------------");
