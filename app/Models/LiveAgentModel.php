@@ -11,7 +11,10 @@ class LiveAgentModel extends Model
 	private $liveagent;
 
 	public function __construct(){
-		$client = new MongoDB("mongodb://dev.symplified.it:27020");
+		$dbHost=config('database.connections.mongodb.host');
+		$dbPort=config('database.connections.mongodb.port');
+
+		$client = new MongoDB("mongodb://$dbHost:$dbPort");
 		$db = $client->wswrapper;
 		$this->liveagent = $db->liveagent;
 	}
