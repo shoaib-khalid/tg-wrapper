@@ -53,6 +53,7 @@ class PassConversationController extends Controller
         \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
         
         $userId=$request["recipientIds"][0];
+        $referenceId=$request["referenceId"];
         
         // add msisdn to liveagent routing
         $handover = new LiveAgentModel();
@@ -61,7 +62,7 @@ class PassConversationController extends Controller
         $msgToCS = "*Handover from Telegram*\nPlease greet the customer (eg: Hi, how may I assist you today?)";
 
         // determine routing
-        $backend = new BackendModel($userId,$msgToCS,"@SymplifiedBot");
+        $backend = new BackendModel($userId,$msgToCS,$referenceId);
         $backend->send();
         \Log::channel('transaction')->info("LOG End ------------------------------------------------");
     }
