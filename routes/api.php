@@ -27,3 +27,8 @@ Route::group(
         Route::post('callback/conversation/pass/', 'PassConversationController@store');
     }
 );
+
+Route::fallback(function () {
+    //Send to 404 or whatever here.
+    return abort(404);
+});

@@ -46,6 +46,10 @@ class HandleConversationController extends Controller
             );
         }
 
+        \Log::channel('transaction')->info("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
+        \Log::channel('transaction')->info("Backend -> HEADER", $request->header());
+        \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
+
         $userId=$request["recipientIds"][0];
 
         // remove msisdn from liveagent routing

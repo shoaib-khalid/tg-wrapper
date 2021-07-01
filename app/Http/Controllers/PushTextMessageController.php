@@ -55,6 +55,10 @@ class PushTextMessageController extends Controller
             );
         }
 
+        \Log::channel('transaction')->info("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
+        \Log::channel('transaction')->info("Backend -> HEADER", $request->header());
+        \Log::channel('transaction')->info("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
+
         $textmessage = "*" . $request["title"] . "*" . "\n" .
                     //    "`" . $request["subTitle"] . "`" . "\n\n" . 
                        $request["message"];
