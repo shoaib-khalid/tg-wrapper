@@ -43,15 +43,17 @@ class IncomingController extends Controller
         // }
 
         // // receive from telegram
-        // if (isset($request['callback_query'])){
-        //     $userId = $request["callback_query"]["message"]["chat"]["id"];
-        //     $username = "@".$request["callback_query"]["message"]["from"]["username"]; // will be use as reference id
-        //     $message = $request["callback_query"]["data"];
-        // } else if (isset($request['message'])) {
-        //     $userId = $request["message"]["chat"]["id"];
-        //     $username = "@".$request["message"]["from"]["username"]; // will be use as reference id
-        //     $message = $request["message"]["text"];
-        // } else {
+        if (isset($request['callback_query'])){
+            $userId = $request["callback_query"]["message"]["chat"]["id"];
+            $username = "@".$request["callback_query"]["message"]["from"]["username"]; // will be use as reference id
+            $message = $request["callback_query"]["data"];
+        } else {
+            $userId = $request["message"]["chat"]["id"];
+            $username = "@".$request["message"]["from"]["username"]; // will be use as reference id
+            $message = $request["message"]["text"];
+        }
+        
+        // else {
         //     return response()->json(
         //         [
         //             'status' => false,
