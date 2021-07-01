@@ -52,9 +52,9 @@ class IncomingController extends Controller
             $username = "@".$request["message"]["from"]["username"]; // will be use as reference id
             $message = $request["message"]["text"];
         } else {
-            // default to symplified ... 
-            $userId = $request["message"]["chat"]["id"];
-            $username = "@".$request["message"]["from"]["username"]; // will be use as reference id
+            // default to symplified ... send to miqdaad
+            $userId = 710117282;
+            $username = "@SymplifiedBot"; // will be use as reference id
             $message = "You are sending features that are not yet supported";
         }
 
