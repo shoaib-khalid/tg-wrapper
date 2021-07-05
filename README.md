@@ -21,41 +21,84 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## First Timer Setup
+This Instruction is for the first timer setup.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Install Composer (Make sure to have PHP 7.4 & above - Recommended)
+2. Clone this repo to your local
+3. Dependency Manager : run `composer install` in your cmd. 
+```
+$ composer install
+```
+4. run `php artisan serve` in your cmd go to localhost:8000 or http://127.0.0.1:8000 (default at port 8000 can be change if require)
+```
+$ php artisan serve
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Required PHP extensions
+Below extension need to be enable / installed in php.ini
 
-## Laravel Sponsors
+```
+# php -m | grep "<extension_name>" ## for linux
+# php -m | Select-String "<extension_name>" ## for windows
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+extension=fileinfo
+extension=mbstring
+extension=openssl
+extension=mongodb
+```
 
-### Premium Partners
+Suggested mongodb extension version : [php_mongodb-1.9.1-8.0-ts-vs16-x64](https://windows.php.net/downloads/pecl/Releases/mongodb/1.9.1/) <br>
+Reference : [Installing the MongoDB PHP Driver on Windows - Manual - PHP](https://www.php.net/manual/en/mongodb.installation.windows.php)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+## DB Migration
 
-## Contributing
+Use this instruction to run existing Migration file.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. create new DB at MySQL named as medusa (medusa name is default, if you changed to other name, u will need to reconfigure .ENV file)
+2. run `php artisan migrate:refresh` in your cmd to re-run all the migration files.
+```
+$ php artisan migrate:refresh
+```
 
-## Code of Conduct
+## Faker/Factories
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Use this to run some faker data.
 
-## Security Vulnerabilities
+1. PHP tinker : run `php artisan tinker` in your cmd. 
+```
+$ php artisan tinker
+```
+2. create 5 dummy data of user faker : run `User::factory()->count(5)->create()`
+```
+$ User::factory()->count(5)->create()
+```
+3. create 15 dummy data of todo faker : run `Todo::facroty()->count(15)->create()`
+```
+$ Todo::factory()->count(15)->create()
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## IMPORTANT! 
+
+If you encounter ERR 500 during serve the project. Follow this instruction!
+
+1. copy .env files : run `cp .env.example .env`.
+```
+$ cp .env.example .env
+```
+2. generate key : run `php artisan key:generate`.
+```
+$ php artisan key:generate
+```
+3. clear cache : run `php artisan config:cache`.
+```
+$ php artisan config:cache
+```
+4. serve again : run `php artisan serve`.
+```
+$ php artisan serve
+```
 
 ## License
 
