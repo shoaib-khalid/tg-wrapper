@@ -25,9 +25,9 @@ class PushTextMessageController extends Controller
             $request->all(), [ 
                 'recipientIds' => 'required|array',
                 'title' => 'required|string',
-                'subTitle' => 'nullable|string',
+                'subTitle' => 'required|string',
                 'message' => 'required|string',
-                'nullable' => 'required|string',
+                'refId' => 'nullable|string',
                 'referenceId' => 'required|string',
             ]
         );
