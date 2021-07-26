@@ -84,15 +84,15 @@ class TelegramModel extends Model
         ];
         
         // get token from user service
-        \Log::channel('transaction')->info("Telegram <- PATH " . $endpoint);
-        \Log::channel('transaction')->info("Telegram <- HEADER " . json_encode($header));
-        \Log::channel('transaction')->info("Telegram <- PARAM " . $parameters);
+        \Log::channel('transaction')->info("User Service <- PATH " . $endpoint);
+        \Log::channel('transaction')->info("User Service <- HEADER " . json_encode($header));
+        \Log::channel('transaction')->info("User Service <- PARAM " . $parameters);
         $response = Http::withHeaders($header)->get($endpoint . "?" . $parameters);
-        \Log::channel('transaction')->info("Telegram <- RESP " . $response);
+        \Log::channel('transaction')->info("User Service <- RESP " . $response);
 
         if ($response["status"] !== 200) {
             $description = "User service give response !== 200";
-
+            \Log::channel('transaction')->info("User Service <- ERROR " . $description);
             return [
                 'system' => 'user-service',
                 'action' => 'get userChannels',
@@ -104,7 +104,7 @@ class TelegramModel extends Model
 
         if (empty($response["data"]["content"])){
             $description = "User service give response.data.content empty";
-
+            \Log::channel('transaction')->info("User Service <- ERROR " . $description);
             return [
                 'system' => 'user-service',
                 'action' => 'get userChannels',
@@ -116,7 +116,7 @@ class TelegramModel extends Model
 
         if (count($response["data"]["content"]) > 1){
             $description = "User service give response.data.content > 1";
-
+            \Log::channel('transaction')->info("User Service <- ERROR " . $description);
             return [
                 'system' => 'user-service',
                 'action' => 'get userChannels',
