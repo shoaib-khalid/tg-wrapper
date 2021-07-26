@@ -33,9 +33,9 @@ class PushTextMessageController extends Controller
         );
             
         if ($validate->fails()) {
-                \Log::channel('transaction')->info("Backend <- RESP " . $validate->errors());
-                \Log::channel('transaction')->info("LOG End Push TextMessage ------------------------------------------------");
-                return response()->json(
+            \Log::channel('transaction')->info("Backend <- RESP " . $validate->errors());
+            \Log::channel('transaction')->info("LOG End Push TextMessage ------------------------------------------------");
+            return response()->json(
                 [
                     'status' => false,
                     'errors' => $validate->errors(),
@@ -64,9 +64,7 @@ class PushTextMessageController extends Controller
 
         // calling telegram
         $telegram = new TelegramModel($request["recipientIds"][0],$textmessage,$request["referenceId"]);
-        $response = $telegram->send();
+        $telegram->send();
         \Log::channel('transaction')->info("LOG End Push TextMessage ------------------------------------------------");
-
-        return $response;
     }
 }

@@ -36,7 +36,6 @@ class IncomingController extends Controller
             ]
         );
         
-        // capture only if both fails
         if ($validator->fails()) {
             \Log::channel('transaction')->info("Telegram <- RESP " . $validate->errors());
             \Log::channel('transaction')->info("LOG End Incoming ------------------------------------------------");
@@ -80,6 +79,5 @@ class IncomingController extends Controller
         $backend->send();
         \Log::channel('transaction')->info("LOG End Incoming ------------------------------------------------");
     }//end store()
-
 
 }

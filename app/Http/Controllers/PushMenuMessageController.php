@@ -34,10 +34,10 @@ class PushMenuMessageController extends Controller
                 'referenceId' => 'required|string',
             ]);
 
-            if ($validate->fails()) {
-                \Log::channel('transaction')->info("Backend <- RESP " . $validate->errors());
-                \Log::channel('transaction')->info("LOG End Push MenuMessage ------------------------------------------------");
-                return response()->json(
+        if ($validate->fails()) {
+            \Log::channel('transaction')->info("Backend <- RESP " . $validate->errors());
+            \Log::channel('transaction')->info("LOG End Push MenuMessage ------------------------------------------------");
+            return response()->json(
                 [
                     'status' => false,
                     'errors' => $validate->errors(),
