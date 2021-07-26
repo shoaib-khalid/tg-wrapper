@@ -16,7 +16,7 @@ class TelegramModel extends Model
     protected $message;
 
     function __construct($msisdn,$message,$botusername) {
-        $this->url =  config('services.telegram.url');
+        $this->url = config('services.telegram.url');
         $this->botusername =  $botusername;
         $this->msisdn = $msisdn;
         $this->message = $message;

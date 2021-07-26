@@ -27,12 +27,14 @@ class HandleConversationController extends Controller
                 'title' => 'required|string',
                 'subTitle' => 'required|string',
                 'message' => 'required|string',
-                'refId' => 'required|string',
+                'refId' => 'nullable|string',
                 'referenceId' => 'required|string',
             ]
         );
 
         if ($validate->fails()) {
+            \Log::channel('transaction')->info("Backend <- RESP " . $validate->errors());
+            \Log::channel('transaction')->info("LOG End Handle Conversation ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
@@ -43,10 +45,13 @@ class HandleConversationController extends Controller
         }
 
         if (count($request["recipientIds"]) > 1) {
+            $description = "Multiple recipientIds detected. This API only accept only 1 recipientId";
+            \Log::channel('transaction')->info("Backend <- RESP " . $description);
+            \Log::channel('transaction')->info("LOG End Handle Conversation ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
-                    'errors' => "Multiple recipientIds detected. This API only accept only 1 recipientId",
+                    'errors' => $description,
                 ],
                 400
             );

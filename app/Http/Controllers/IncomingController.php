@@ -38,6 +38,8 @@ class IncomingController extends Controller
         
         // capture only if both fails
         if ($validator->fails()) {
+            \Log::channel('transaction')->info("Telegram <- RESP " . $validate->errors());
+            \Log::channel('transaction')->info("LOG End Incoming ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
@@ -61,10 +63,13 @@ class IncomingController extends Controller
                 $message = "Non text messages sent by telegram client";
             }
         } else {
+            $description = "Either callback query field or message field can't be null";
+            \Log::channel('transaction')->info("Backend <- RESP " . $description);
+            \Log::channel('transaction')->info("LOG End Incoming ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
-                    'errors' => "Either callback query field or message field can't be null",
+                    'errors' => $description,
                 ],
                 400
             );
