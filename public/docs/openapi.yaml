@@ -5,7 +5,7 @@ info:
   version: 1.0.0
 servers:
   -
-    url: 'https://tgw.symplified.biz'
+    url: 'http://tgw.localhost.test'
 paths:
   '/telegram/incoming/{botid}':
     post:
@@ -54,7 +54,7 @@ paths:
                             id:
                               type: integer
                               description: ''
-                              example: 12
+                              example: 6
                         from:
                           type: object
                           description: ''
@@ -63,11 +63,11 @@ paths:
                             username:
                               type: string
                               description: ''
-                              example: doloremque
+                              example: aliquid
                         data:
                           type: string
                           description: ''
-                          example: laborum
+                          example: quia
                 message:
                   type: object
                   description: ''
@@ -81,7 +81,7 @@ paths:
                         id:
                           type: integer
                           description: ''
-                          example: 6
+                          example: 18
                     from:
                       type: object
                       description: ''
@@ -90,18 +90,18 @@ paths:
                         username:
                           type: string
                           description: ''
-                          example: deleniti
+                          example: rerum
                     data:
                       type: string
                       description: ''
-                      example: sequi
+                      example: tempora
       security: []
     parameters:
       -
         in: path
         name: botid
         description: ''
-        example: similique
+        example: dolorem
         required: true
         schema:
           type: string
@@ -138,29 +138,29 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - iure
+                    - est
                   items:
                     type: string
                 title:
                   type: string
                   description: ''
-                  example: et
+                  example: totam
                 subTitle:
                   type: string
                   description: ''
-                  example: blanditiis
+                  example: assumenda
                 message:
                   type: string
                   description: ''
-                  example: molestias
+                  example: minima
                 refId:
                   type: string
                   description: ''
-                  example: quo
+                  example: amet
                 referenceId:
                   type: string
                   description: ''
-                  example: perspiciatis
+                  example: autem
               required:
                 - recipientIds
                 - title
@@ -201,17 +201,17 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - fuga
+                    - quos
                   items:
                     type: string
                 title:
                   type: string
                   description: ''
-                  example: nesciunt
+                  example: aliquid
                 subTitle:
                   type: string
                   description: ''
-                  example: id
+                  example: quibusdam
                 menuItems:
                   type: array
                   description: ''
@@ -223,15 +223,15 @@ paths:
                       type:
                         type: string
                         description: ''
-                        example: atque
+                        example: sed
                       title:
                         type: string
                         description: ''
-                        example: eaque
+                        example: dolor
                       payload:
                         type: integer
                         description: ''
-                        example: 17
+                        example: 10
                     required:
                       - type
                       - title
@@ -239,11 +239,11 @@ paths:
                 refId:
                   type: string
                   description: ''
-                  example: nesciunt
+                  example: voluptas
                 referenceId:
                   type: string
                   description: ''
-                  example: rerum
+                  example: dolore
               required:
                 - recipientIds
                 - title
@@ -284,29 +284,29 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - optio
+                    - temporibus
                   items:
                     type: string
                 title:
                   type: string
                   description: ''
-                  example: nihil
+                  example: in
                 subTitle:
                   type: string
                   description: ''
-                  example: ratione
+                  example: facere
                 message:
                   type: string
                   description: ''
-                  example: rerum
+                  example: est
                 refId:
                   type: string
                   description: ''
-                  example: nemo
+                  example: voluptatem
                 referenceId:
                   type: string
                   description: ''
-                  example: et
+                  example: assumenda
               required:
                 - recipientIds
                 - title
@@ -348,29 +348,29 @@ paths:
                   type: array
                   description: ''
                   example:
-                    - eos
+                    - laborum
                   items:
                     type: string
                 title:
                   type: string
                   description: ''
-                  example: et
+                  example: a
                 subTitle:
                   type: string
                   description: ''
-                  example: recusandae
+                  example: et
                 message:
                   type: string
                   description: ''
-                  example: exercitationem
+                  example: dolores
                 refId:
                   type: string
                   description: ''
-                  example: magni
+                  example: a
                 referenceId:
                   type: string
                   description: ''
-                  example: et
+                  example: repellat
               required:
                 - recipientIds
                 - title

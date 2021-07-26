@@ -19,7 +19,7 @@
 
     <script src="//cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
     <script>
-        var baseUrl = "https://tgw.symplified.biz";
+        var baseUrl = "http://tgw.localhost.test";
     </script>
     <script src="../docs/js/tryitout-3.3.1.js"></script>
 
@@ -51,7 +51,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
             <ul class="toc-footer" id="last-updated">
-            <li>Last updated: July 1 2021</li>
+            <li>Last updated: July 15 2021</li>
         </ul>
 </div>
 <div class="page-wrapper">
@@ -64,7 +64,7 @@ You can switch the language used with the tabs at the top right (or from the nav
 <blockquote>
 <p>Base URL</p>
 </blockquote>
-<pre><code class="language-yaml">https://tgw.symplified.biz</code></pre>
+<pre><code class="language-yaml">http://tgw.localhost.test</code></pre>
 
         <h1>Authenticating requests</h1>
 <p>This API is not authenticated.</p>
@@ -85,35 +85,35 @@ You can switch the language used with the tabs at the top right (or from the nav
 
 
 <pre><code class="language-bash">curl --request POST \
-    "https://tgw.symplified.biz/telegram/incoming/similique" \
+    "http://tgw.localhost.test/telegram/incoming/dolorem" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"callback_query\": {
         \"message\": {
             \"chat\": {
-                \"id\": 12
+                \"id\": 6
             },
             \"from\": {
-                \"username\": \"doloremque\"
+                \"username\": \"aliquid\"
             },
-            \"data\": \"laborum\"
+            \"data\": \"quia\"
         }
     },
     \"message\": {
         \"chat\": {
-            \"id\": 6
+            \"id\": 18
         },
         \"from\": {
-            \"username\": \"deleniti\"
+            \"username\": \"rerum\"
         },
-        \"data\": \"sequi\"
+        \"data\": \"tempora\"
     }
 }"
 </code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "https://tgw.symplified.biz/telegram/incoming/similique"
+    "http://tgw.localhost.test/telegram/incoming/dolorem"
 );
 
 let headers = {
@@ -125,22 +125,22 @@ let body = {
     "callback_query": {
         "message": {
             "chat": {
-                "id": 12
+                "id": 6
             },
             "from": {
-                "username": "doloremque"
+                "username": "aliquid"
             },
-            "data": "laborum"
+            "data": "quia"
         }
     },
     "message": {
         "chat": {
-            "id": 6
+            "id": 18
         },
         "from": {
-            "username": "deleniti"
+            "username": "rerum"
         },
-        "data": "sequi"
+        "data": "tempora"
     }
 }
 
@@ -320,23 +320,23 @@ fetch(url, {
 
 
 <pre><code class="language-bash">curl --request POST \
-    "https://tgw.symplified.biz/telegram/callback/textmessage/push" \
+    "http://tgw.localhost.test/telegram/callback/textmessage/push" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"iure\"
+        \"est\"
     ],
-    \"title\": \"et\",
-    \"subTitle\": \"blanditiis\",
-    \"message\": \"molestias\",
-    \"refId\": \"quo\",
-    \"referenceId\": \"perspiciatis\"
+    \"title\": \"totam\",
+    \"subTitle\": \"assumenda\",
+    \"message\": \"minima\",
+    \"refId\": \"amet\",
+    \"referenceId\": \"autem\"
 }"
 </code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "https://tgw.symplified.biz/telegram/callback/textmessage/push"
+    "http://tgw.localhost.test/telegram/callback/textmessage/push"
 );
 
 let headers = {
@@ -346,13 +346,13 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "iure"
+        "est"
     ],
-    "title": "et",
-    "subTitle": "blanditiis",
-    "message": "molestias",
-    "refId": "quo",
-    "referenceId": "perspiciatis"
+    "title": "totam",
+    "subTitle": "assumenda",
+    "message": "minima",
+    "refId": "amet",
+    "referenceId": "autem"
 }
 
 fetch(url, {
@@ -465,29 +465,29 @@ fetch(url, {
 
 
 <pre><code class="language-bash">curl --request POST \
-    "https://tgw.symplified.biz/telegram/callback/menumessage/push" \
+    "http://tgw.localhost.test/telegram/callback/menumessage/push" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"fuga\"
+        \"quos\"
     ],
-    \"title\": \"nesciunt\",
-    \"subTitle\": \"id\",
+    \"title\": \"aliquid\",
+    \"subTitle\": \"quibusdam\",
     \"menuItems\": [
         {
-            \"type\": \"atque\",
-            \"title\": \"eaque\",
-            \"payload\": 17
+            \"type\": \"sed\",
+            \"title\": \"dolor\",
+            \"payload\": 10
         }
     ],
-    \"refId\": \"nesciunt\",
-    \"referenceId\": \"rerum\"
+    \"refId\": \"voluptas\",
+    \"referenceId\": \"dolore\"
 }"
 </code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "https://tgw.symplified.biz/telegram/callback/menumessage/push"
+    "http://tgw.localhost.test/telegram/callback/menumessage/push"
 );
 
 let headers = {
@@ -497,19 +497,19 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "fuga"
+        "quos"
     ],
-    "title": "nesciunt",
-    "subTitle": "id",
+    "title": "aliquid",
+    "subTitle": "quibusdam",
     "menuItems": [
         {
-            "type": "atque",
-            "title": "eaque",
-            "payload": 17
+            "type": "sed",
+            "title": "dolor",
+            "payload": 10
         }
     ],
-    "refId": "nesciunt",
-    "referenceId": "rerum"
+    "refId": "voluptas",
+    "referenceId": "dolore"
 }
 
 fetch(url, {
@@ -646,23 +646,23 @@ fetch(url, {
 
 
 <pre><code class="language-bash">curl --request POST \
-    "https://tgw.symplified.biz/telegram/callback/conversation/handle" \
+    "http://tgw.localhost.test/telegram/callback/conversation/handle" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"optio\"
+        \"temporibus\"
     ],
-    \"title\": \"nihil\",
-    \"subTitle\": \"ratione\",
-    \"message\": \"rerum\",
-    \"refId\": \"nemo\",
-    \"referenceId\": \"et\"
+    \"title\": \"in\",
+    \"subTitle\": \"facere\",
+    \"message\": \"est\",
+    \"refId\": \"voluptatem\",
+    \"referenceId\": \"assumenda\"
 }"
 </code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "https://tgw.symplified.biz/telegram/callback/conversation/handle"
+    "http://tgw.localhost.test/telegram/callback/conversation/handle"
 );
 
 let headers = {
@@ -672,13 +672,13 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "optio"
+        "temporibus"
     ],
-    "title": "nihil",
-    "subTitle": "ratione",
-    "message": "rerum",
-    "refId": "nemo",
-    "referenceId": "et"
+    "title": "in",
+    "subTitle": "facere",
+    "message": "est",
+    "refId": "voluptatem",
+    "referenceId": "assumenda"
 }
 
 fetch(url, {
@@ -791,23 +791,23 @@ fetch(url, {
 
 
 <pre><code class="language-bash">curl --request POST \
-    "https://tgw.symplified.biz/telegram/callback/conversation/pass" \
+    "http://tgw.localhost.test/telegram/callback/conversation/pass" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
     \"recipientIds\": [
-        \"eos\"
+        \"laborum\"
     ],
-    \"title\": \"et\",
-    \"subTitle\": \"recusandae\",
-    \"message\": \"exercitationem\",
-    \"refId\": \"magni\",
-    \"referenceId\": \"et\"
+    \"title\": \"a\",
+    \"subTitle\": \"et\",
+    \"message\": \"dolores\",
+    \"refId\": \"a\",
+    \"referenceId\": \"repellat\"
 }"
 </code></pre>
 
 <pre><code class="language-javascript">const url = new URL(
-    "https://tgw.symplified.biz/telegram/callback/conversation/pass"
+    "http://tgw.localhost.test/telegram/callback/conversation/pass"
 );
 
 let headers = {
@@ -817,13 +817,13 @@ let headers = {
 
 let body = {
     "recipientIds": [
-        "eos"
+        "laborum"
     ],
-    "title": "et",
-    "subTitle": "recusandae",
-    "message": "exercitationem",
-    "refId": "magni",
-    "referenceId": "et"
+    "title": "a",
+    "subTitle": "et",
+    "message": "dolores",
+    "refId": "a",
+    "referenceId": "repellat"
 }
 
 fetch(url, {

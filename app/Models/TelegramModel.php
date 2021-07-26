@@ -14,48 +14,39 @@ class TelegramModel extends Model
     protected $token;
     protected $msisdn;
     protected $message;
-    protected $replyMessage;
 
-    function __construct($msisdn,$message,$replyMessage=[]) {
+    function __construct($msisdn,$message,$botusername) {
         $this->url =  config('services.telegram.url');
-        $this->token =  config('services.telegram.token');
+        $this->botusername =  $botusername;
         $this->msisdn = $msisdn;
         $this->message = $message;
-        $this->replyMessage = $replyMessage;
     }
 
     function send(){
 
         $url = $this->url;
-        $token = $this->token;
+        $botusername = $this->botusername;
         $msisdn = $this->msisdn;
         $message = $this->message;
-        $replyMessage = $this->replyMessage;
 
+        $response = $this->getUserServiceByRefId($botusername);
+        if (gettype($response) == "array" && $response["status"] === false) {
+            return response()->json($response,400);
+        }
+ 
+        $token = $response["data"]["content"][0]["token"];
+
+        // get token based on $botusername
         $endpoint = $url . "/bot" . $token . "/sendmessage";
 
         $data = [];
-        if(count($replyMessage) > 0){
+        if(gettype($message) == "array"){
             // for menu messages
             $data = [
                 'chat_id' => $msisdn,
-                'text' => $message,
+                'text' => $message["textHeader"],
                 'parse_mode' => 'markdown',
-                'reply_markup' => 
-                // json_encode(
-                //    [
-                //     '_' => 'replyKeyboardMarkup', 'rows' => [
-                //         ['_' => 'keyboardButtonRow', 'buttons' =>[
-                //             ['_' => 'keyboardButton', 'text' => 'Help'],
-                //             ['_' => 'keyboardButton', 'text' => 'Gallery']
-                //         ]],
-                //         ['_' => 'keyboardButtonRow', 'buttons' =>[
-                //             ['_' => 'keyboardButton', 'text' => 'Add'],
-                //             ['_' => 'keyboardButton', 'text' => 'Statistics']
-                //         ]]
-                //     ]
-                // ],true)
-                json_encode($replyMessage,true)
+                'reply_markup' => json_encode($message["keyboard"],true)
             ];
         } else {
             // for text messages
@@ -66,13 +57,75 @@ class TelegramModel extends Model
             ];
         }
         $parameters = http_build_query($data);
-        $header = ["Content-type: application/json"];
+        $header = ["Content-type" => "application/json"];
         $object = [];
 
-        // send to core
+        // send to telegram
         \Log::channel('transaction')->info("Telegram <- PATH " . $endpoint);
+        \Log::channel('transaction')->info("Telegram <- HEADER " . json_encode($header));
         \Log::channel('transaction')->info("Telegram <- PARAM " . $parameters);
         $response = Http::withHeaders($header)->get($endpoint . "?" . $parameters);
         \Log::channel('transaction')->info("Telegram <- RESP " . $response);
+    }
+
+    private function getUserServiceByRefId($refId) {
+
+        $url = config('services.userservice.url');
+        $token = config('services.userservice.token');
+        $endpoint = $url . "/userChannels";
+        $data = [
+            'refId' => $refId,
+            'channelName' => 'telegram'
+        ];
+        $parameters = http_build_query($data);
+        $header = [
+            "Content-type" => "application/json",
+            "Authorization" => "Bearer $token"
+        ];
+        
+        // get token from user service
+        \Log::channel('transaction')->info("Telegram <- PATH " . $endpoint);
+        \Log::channel('transaction')->info("Telegram <- HEADER " . json_encode($header));
+        \Log::channel('transaction')->info("Telegram <- PARAM " . $parameters);
+        $response = Http::withHeaders($header)->get($endpoint . "?" . $parameters);
+        \Log::channel('transaction')->info("Telegram <- RESP " . $response);
+
+        if ($response["status"] !== 200) {
+            $description = "User service give response !== 200";
+
+            return [
+                'system' => 'user-service',
+                'action' => 'get userChannels',
+                'status' => false,
+                'system_response' => $response->json(),
+                'description' => $description
+            ];
+        }
+
+        if (empty($response["data"]["content"])){
+            $description = "User service give response.data.content empty";
+
+            return [
+                'system' => 'user-service',
+                'action' => 'get userChannels',
+                'status' => false,
+                'system_response' => $response->json(),
+                'description' => $description
+            ];
+        }
+
+        if (count($response["data"]["content"]) > 1){
+            $description = "User service give response.data.content > 1";
+
+            return [
+                'system' => 'user-service',
+                'action' => 'get userChannels',
+                'status' => false,
+                'system_response' => $response->json(),
+                'description' => $description
+            ];
+        }
+
+        return $response;
     }
 }

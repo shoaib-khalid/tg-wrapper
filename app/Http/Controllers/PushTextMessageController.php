@@ -51,24 +51,16 @@ class PushTextMessageController extends Controller
             );
         }
 
-        if ($request["refId"] !== $request["recipientIds"][0]) {
-            return response()->json(
-                [
-                    'status' => false,
-                    'errors' => "refId need to match recipientId. refId[".$request["refId"]."] != recipientId[".$request['recipientIds'][0]."]",
-                ],
-                400
-            );
-        }
-
 
         $textmessage = "*" . $request["title"] . "*" . "\n" .
                     //    "`" . $request["subTitle"] . "`" . "\n\n" . 
                        $request["message"];
 
         // calling telegram
-        $telegram = new TelegramModel($request["recipientIds"][0],$textmessage);
-        $telegram->send();
+        $telegram = new TelegramModel($request["recipientIds"][0],$textmessage,$request["referenceId"]);
+        $response = $telegram->send();
         \Log::channel('transaction')->info("LOG End Push TextMessage ------------------------------------------------");
+
+        return $response;
     }
 }

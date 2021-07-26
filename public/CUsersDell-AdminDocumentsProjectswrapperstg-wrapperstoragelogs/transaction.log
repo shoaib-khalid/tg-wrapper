@@ -1,0 +1,718 @@
+[2021-07-15 06:32:42] local.INFO: LOG Start Incoming ------------------------------------------------  
+[2021-07-15 06:32:42] local.INFO: Telegram -> PATH http://tgw.localhost.test/telegram/incoming/@ahmadRfidxbot  
+[2021-07-15 06:32:42] local.INFO: Telegram -> HEADER {"host":["tgw.localhost.test"],"connection":["keep-alive"],"content-length":["85"],"accept":["application/json"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"],"content-type":["application/json"],"origin":["http://tgw.localhost.test"],"referer":["http://tgw.localhost.test/docs/"],"accept-encoding":["gzip, deflate"],"accept-language":["en-US,en;q=0.9"]} 
+[2021-07-15 06:32:42] local.INFO: Telegram -> BODY {"message":{"chat":{"id":"710117282"},"from":{"username":"admiraludon"},"data":"hi"}}  
+[2021-07-15 06:32:42] local.DEBUG: TG-Wrapper -- MongoDB Status msisdn[710117282]  
+[2021-07-15 07:19:26] local.INFO: LOG Start Incoming ------------------------------------------------  
+[2021-07-15 07:19:26] local.INFO: Telegram -> PATH http://tgw.localhost.test/telegram/incoming/@ahmadRfidxbot  
+[2021-07-15 07:19:26] local.INFO: Telegram -> HEADER {"host":["tgw.localhost.test"],"connection":["keep-alive"],"content-length":["85"],"accept":["application/json"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"],"content-type":["application/json"],"origin":["http://tgw.localhost.test"],"referer":["http://tgw.localhost.test/docs/"],"accept-encoding":["gzip, deflate"],"accept-language":["en-US,en;q=0.9"]} 
+[2021-07-15 07:19:26] local.INFO: Telegram -> BODY {"message":{"chat":{"id":"710117282"},"from":{"username":"admiraludon"},"data":"hi"}}  
+[2021-07-15 07:19:26] local.DEBUG: TG-Wrapper -- MongoDB Status msisdn[710117282]  
+[2021-07-15 07:22:10] local.INFO: LOG Start Incoming ------------------------------------------------  
+[2021-07-15 07:22:10] local.INFO: Telegram -> PATH http://tgw.localhost.test/telegram/incoming/@ahmadRfidxbot  
+[2021-07-15 07:22:10] local.INFO: Telegram -> HEADER {"host":["tgw.localhost.test"],"connection":["keep-alive"],"content-length":["85"],"accept":["application/json"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"],"content-type":["application/json"],"origin":["http://tgw.localhost.test"],"referer":["http://tgw.localhost.test/docs/"],"accept-encoding":["gzip, deflate"],"accept-language":["en-US,en;q=0.9"]} 
+[2021-07-15 07:22:10] local.INFO: Telegram -> BODY {"message":{"chat":{"id":"710117282"},"from":{"username":"admiraludon"},"data":"hi"}}  
+[2021-07-15 07:22:10] local.DEBUG: TG-Wrapper -- MongoDB Status msisdn[710117282]  
+[2021-07-15 07:22:11] local.DEBUG: TG-Wrapper -- MongoDB Status result[{}]  
+[2021-07-15 07:22:11] local.INFO: KbotCore <- PATH http://209.58.160.20:5001/inbound/?refrenceId=@ahmadRfidxbot&senderId=710117282  
+[2021-07-15 07:22:11] local.INFO: KbotCore <- BODY {"callbackUrl":"http:\/\/tgw.localhost.test\/telegram\/","data":"Non text messages sent by telegram client","isGuest":true,"msgId":"60efe22328f06","referral":"60efe22328f06","referenceId":"@ahmadRfidxbot"}  
+[2021-07-15 07:22:11] local.INFO: KbotCore <- RESP 200 {"timestamp":"2021-07-15 15:22:10.712","status":200,"message":"OK","path":"/inbound/"}  
+[2021-07-15 07:22:11] local.INFO: LOG End Incoming ------------------------------------------------  
+[2021-07-15 07:22:44] local.INFO: LOG Start Incoming ------------------------------------------------  
+[2021-07-15 07:22:44] local.INFO: Telegram -> PATH http://tgw.localhost.test/telegram/incoming/@ahmadRfidxbot  
+[2021-07-15 07:22:44] local.INFO: Telegram -> HEADER {"host":["tgw.localhost.test"],"connection":["keep-alive"],"content-length":["85"],"accept":["application/json"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"],"content-type":["application/json"],"origin":["http://tgw.localhost.test"],"referer":["http://tgw.localhost.test/docs/"],"accept-encoding":["gzip, deflate"],"accept-language":["en-US,en;q=0.9"]} 
+[2021-07-15 07:22:44] local.INFO: Telegram -> BODY {"message":{"chat":{"id":"710117282"},"from":{"username":"admiraludon"},"data":"hi"}}  
+[2021-07-15 07:22:44] local.DEBUG: TG-Wrapper -- MongoDB Status msisdn[710117282]  
+[2021-07-15 07:22:44] local.DEBUG: TG-Wrapper -- MongoDB Status result[{}]  
+[2021-07-15 07:22:44] local.INFO: KbotCore <- PATH http://209.58.160.20:5001/inbound/?refrenceId=@ahmadRfidxbot&senderId=710117282  
+[2021-07-15 07:22:44] local.INFO: KbotCore <- BODY {"callbackUrl":"http:\/\/tgw.localhost.test\/telegram\/","data":"Non text messages sent by telegram client","isGuest":true,"msgId":"60efe244d3e3e","referral":"60efe244d3e3e","referenceId":"@ahmadRfidxbot"}  
+[2021-07-15 07:22:45] local.INFO: KbotCore <- RESP 200 {"timestamp":"2021-07-15 15:22:44.335","status":200,"message":"OK","path":"/inbound/"}  
+[2021-07-15 07:22:45] local.INFO: LOG End Incoming ------------------------------------------------  
+[2021-07-15 07:24:36] local.INFO: LOG Start Incoming ------------------------------------------------  
+[2021-07-15 07:24:36] local.INFO: Telegram -> PATH http://tgw.localhost.test/telegram/incoming/@ahmadRfidxbot  
+[2021-07-15 07:24:36] local.INFO: Telegram -> HEADER {"host":["tgw.localhost.test"],"connection":["keep-alive"],"content-length":["85"],"accept":["application/json"],"user-agent":["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"],"content-type":["application/json"],"origin":["http://tgw.localhost.test"],"referer":["http://tgw.localhost.test/docs/"],"accept-encoding":["gzip, deflate"],"accept-language":["en-US,en;q=0.9"]} 
+[2021-07-15 07:24:36] local.INFO: Telegram -> BODY {"message":{"chat":{"id":"710117282"},"from":{"username":"admiraludon"},"data":"hi"}}  
+[2021-07-15 07:24:37] local.DEBUG: TG-Wrapper -- MongoDB Status msisdn[710117282]  
+[2021-07-15 07:24:37] local.DEBUG: TG-Wrapper -- MongoDB Status result[{}]  
+[2021-07-15 07:24:37] local.INFO: KbotCore <- PATH http://209.58.160.20:5001/inbound/?refrenceId=@ahmadRfidxbot&senderId=710117282  
+[2021-07-15 07:24:37] local.INFO: KbotCore <- BODY {"callbackUrl":"http:\/\/tgw.localhost.test\/telegram\/","data":"Non text messages sent by telegram client","isGuest":true,"msgId":"60efe2b55ebda","referral":"60efe2b55ebda","referenceId":"@ahmadRfidxbot"}  
+[2021-07-15 07:24:37] local.INFO: KbotCore <- RESP 200 {"timestamp":"2021-07-15 15:24:36.860","status":200,"message":"OK","path":"/inbound/"}  
+[2021-07-15 07:24:37] local.INFO: LOG End Incoming ------------------------------------------------  
+[2021-07-26 10:13:27] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:13:27] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:13:27] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["84800198-f97b-425f-a5ab-19ad0d625eab"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:13:27] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:14:22] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:14:22] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:14:22] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["b2283dea-1b98-4ce4-9241-6fb9dda61722"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:14:22] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:14:22] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/userChannels  
+[2021-07-26 10:14:22] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:14:22] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:14:23] local.INFO: Telegram <- RESP <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>404 &mdash; Page Not Found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="404 - Page Not Found"/>
+    <style type="text/css">
+        body {font-size:14px; color:#777777; font-family:arial; text-align:center;}
+        h1 {font-size:180px; color:#99A7AF; margin: 70px 0 0 0;}
+        h2 {color: #DE6C5D; font-family: arial; font-size: 20px; font-weight: bold; letter-spacing: -1px; margin: -3px 0 39px;}
+        p {width:375px; text-align:center; margin-left:auto;margin-right:auto; margin-top: 30px }
+        div {width:375px; text-align:center; margin-left:auto;margin-right:auto;}
+        a:link {color: #34536A;}
+        a:visited {color: #34536A;}
+        a:active {color: #34536A;}
+        a:hover {color: #34536A;}
+    </style>
+</head>
+<body>
+    <p><a href="http://symplified.biz/">symplified.biz</a></p>
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <div>
+        The page you were trying to reach does not exist. Or, maybe it has moved.
+        You can start again from <a href="http://symplified.biz/">home</a> or go back to the <a href="javascript:%20history.go(-1)">previous page</a>.
+    </div>
+</body>
+</html>
+  
+[2021-07-26 10:23:30] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:23:30] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:23:30] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["29fc2b94-bc20-49d2-b2dd-d84c2bc770bb"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:23:30] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:23:30] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/userChannels  
+[2021-07-26 10:23:30] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:23:30] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:23:31] local.INFO: Telegram <- RESP <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>404 &mdash; Page Not Found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="404 - Page Not Found"/>
+    <style type="text/css">
+        body {font-size:14px; color:#777777; font-family:arial; text-align:center;}
+        h1 {font-size:180px; color:#99A7AF; margin: 70px 0 0 0;}
+        h2 {color: #DE6C5D; font-family: arial; font-size: 20px; font-weight: bold; letter-spacing: -1px; margin: -3px 0 39px;}
+        p {width:375px; text-align:center; margin-left:auto;margin-right:auto; margin-top: 30px }
+        div {width:375px; text-align:center; margin-left:auto;margin-right:auto;}
+        a:link {color: #34536A;}
+        a:visited {color: #34536A;}
+        a:active {color: #34536A;}
+        a:hover {color: #34536A;}
+    </style>
+</head>
+<body>
+    <p><a href="http://symplified.biz/">symplified.biz</a></p>
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <div>
+        The page you were trying to reach does not exist. Or, maybe it has moved.
+        You can start again from <a href="http://symplified.biz/">home</a> or go back to the <a href="javascript:%20history.go(-1)">previous page</a>.
+    </div>
+</body>
+</html>
+  
+[2021-07-26 10:25:11] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:25:11] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:25:11] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["d338ec55-6143-4468-87f7-dbde1f55ff53"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:25:11] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:25:11] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/userChannels  
+[2021-07-26 10:25:11] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:25:11] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:25:12] local.INFO: Telegram <- RESP <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>404 &mdash; Page Not Found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="404 - Page Not Found"/>
+    <style type="text/css">
+        body {font-size:14px; color:#777777; font-family:arial; text-align:center;}
+        h1 {font-size:180px; color:#99A7AF; margin: 70px 0 0 0;}
+        h2 {color: #DE6C5D; font-family: arial; font-size: 20px; font-weight: bold; letter-spacing: -1px; margin: -3px 0 39px;}
+        p {width:375px; text-align:center; margin-left:auto;margin-right:auto; margin-top: 30px }
+        div {width:375px; text-align:center; margin-left:auto;margin-right:auto;}
+        a:link {color: #34536A;}
+        a:visited {color: #34536A;}
+        a:active {color: #34536A;}
+        a:hover {color: #34536A;}
+    </style>
+</head>
+<body>
+    <p><a href="http://symplified.biz/">symplified.biz</a></p>
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <div>
+        The page you were trying to reach does not exist. Or, maybe it has moved.
+        You can start again from <a href="http://symplified.biz/">home</a> or go back to the <a href="javascript:%20history.go(-1)">previous page</a>.
+    </div>
+</body>
+</html>
+  
+[2021-07-26 10:26:05] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:26:05] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:26:05] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["7bc41dac-a174-42f4-a8f1-91e25ce0e4c0"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:26:05] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:26:05] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/userChannels  
+[2021-07-26 10:26:05] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:26:05] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:26:06] local.INFO: Telegram <- RESP <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>404 &mdash; Page Not Found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="404 - Page Not Found"/>
+    <style type="text/css">
+        body {font-size:14px; color:#777777; font-family:arial; text-align:center;}
+        h1 {font-size:180px; color:#99A7AF; margin: 70px 0 0 0;}
+        h2 {color: #DE6C5D; font-family: arial; font-size: 20px; font-weight: bold; letter-spacing: -1px; margin: -3px 0 39px;}
+        p {width:375px; text-align:center; margin-left:auto;margin-right:auto; margin-top: 30px }
+        div {width:375px; text-align:center; margin-left:auto;margin-right:auto;}
+        a:link {color: #34536A;}
+        a:visited {color: #34536A;}
+        a:active {color: #34536A;}
+        a:hover {color: #34536A;}
+    </style>
+</head>
+<body>
+    <p><a href="http://symplified.biz/">symplified.biz</a></p>
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <div>
+        The page you were trying to reach does not exist. Or, maybe it has moved.
+        You can start again from <a href="http://symplified.biz/">home</a> or go back to the <a href="javascript:%20history.go(-1)">previous page</a>.
+    </div>
+</body>
+</html>
+  
+[2021-07-26 10:26:46] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:26:46] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:26:46] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["1bfef412-6847-4137-9c11-9bbcf6b1c775"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:26:46] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:26:47] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 10:27:22] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:27:22] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:27:22] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["bd325605-af64-4873-a673-1ed5d2908d4d"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:27:22] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:27:22] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/userChannels  
+[2021-07-26 10:27:22] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:27:22] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:27:23] local.INFO: Telegram <- RESP <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>404 &mdash; Page Not Found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="404 - Page Not Found"/>
+    <style type="text/css">
+        body {font-size:14px; color:#777777; font-family:arial; text-align:center;}
+        h1 {font-size:180px; color:#99A7AF; margin: 70px 0 0 0;}
+        h2 {color: #DE6C5D; font-family: arial; font-size: 20px; font-weight: bold; letter-spacing: -1px; margin: -3px 0 39px;}
+        p {width:375px; text-align:center; margin-left:auto;margin-right:auto; margin-top: 30px }
+        div {width:375px; text-align:center; margin-left:auto;margin-right:auto;}
+        a:link {color: #34536A;}
+        a:visited {color: #34536A;}
+        a:active {color: #34536A;}
+        a:hover {color: #34536A;}
+    </style>
+</head>
+<body>
+    <p><a href="http://symplified.biz/">symplified.biz</a></p>
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <div>
+        The page you were trying to reach does not exist. Or, maybe it has moved.
+        You can start again from <a href="http://symplified.biz/">home</a> or go back to the <a href="javascript:%20history.go(-1)">previous page</a>.
+    </div>
+</body>
+</html>
+  
+[2021-07-26 10:30:58] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:30:58] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:30:58] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["472578af-8559-4981-b2f5-60471429c2b6"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:30:58] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:30:58] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/userChannels  
+[2021-07-26 10:30:58] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:30:58] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:31:00] local.INFO: Telegram <- RESP <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>404 &mdash; Page Not Found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="404 - Page Not Found"/>
+    <style type="text/css">
+        body {font-size:14px; color:#777777; font-family:arial; text-align:center;}
+        h1 {font-size:180px; color:#99A7AF; margin: 70px 0 0 0;}
+        h2 {color: #DE6C5D; font-family: arial; font-size: 20px; font-weight: bold; letter-spacing: -1px; margin: -3px 0 39px;}
+        p {width:375px; text-align:center; margin-left:auto;margin-right:auto; margin-top: 30px }
+        div {width:375px; text-align:center; margin-left:auto;margin-right:auto;}
+        a:link {color: #34536A;}
+        a:visited {color: #34536A;}
+        a:active {color: #34536A;}
+        a:hover {color: #34536A;}
+    </style>
+</head>
+<body>
+    <p><a href="http://symplified.biz/">symplified.biz</a></p>
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <div>
+        The page you were trying to reach does not exist. Or, maybe it has moved.
+        You can start again from <a href="http://symplified.biz/">home</a> or go back to the <a href="javascript:%20history.go(-1)">previous page</a>.
+    </div>
+</body>
+</html>
+  
+[2021-07-26 10:33:12] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:33:12] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:33:12] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["13004016-8b27-4420-b7f5-eb7d0928eb21"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:33:12] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:33:12] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/userChannels  
+[2021-07-26 10:33:12] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:33:12] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:33:14] local.INFO: Telegram <- RESP <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>404 &mdash; Page Not Found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="404 - Page Not Found"/>
+    <style type="text/css">
+        body {font-size:14px; color:#777777; font-family:arial; text-align:center;}
+        h1 {font-size:180px; color:#99A7AF; margin: 70px 0 0 0;}
+        h2 {color: #DE6C5D; font-family: arial; font-size: 20px; font-weight: bold; letter-spacing: -1px; margin: -3px 0 39px;}
+        p {width:375px; text-align:center; margin-left:auto;margin-right:auto; margin-top: 30px }
+        div {width:375px; text-align:center; margin-left:auto;margin-right:auto;}
+        a:link {color: #34536A;}
+        a:visited {color: #34536A;}
+        a:active {color: #34536A;}
+        a:hover {color: #34536A;}
+    </style>
+</head>
+<body>
+    <p><a href="http://symplified.biz/">symplified.biz</a></p>
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <div>
+        The page you were trying to reach does not exist. Or, maybe it has moved.
+        You can start again from <a href="http://symplified.biz/">home</a> or go back to the <a href="javascript:%20history.go(-1)">previous page</a>.
+    </div>
+</body>
+</html>
+  
+[2021-07-26 10:33:27] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:33:27] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:33:27] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["1d81422a-5417-4eff-964c-a8596f1a8e18"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:33:27] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:33:28] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/userChannels  
+[2021-07-26 10:33:28] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:33:28] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:33:29] local.INFO: Telegram <- RESP <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>404 &mdash; Page Not Found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="404 - Page Not Found"/>
+    <style type="text/css">
+        body {font-size:14px; color:#777777; font-family:arial; text-align:center;}
+        h1 {font-size:180px; color:#99A7AF; margin: 70px 0 0 0;}
+        h2 {color: #DE6C5D; font-family: arial; font-size: 20px; font-weight: bold; letter-spacing: -1px; margin: -3px 0 39px;}
+        p {width:375px; text-align:center; margin-left:auto;margin-right:auto; margin-top: 30px }
+        div {width:375px; text-align:center; margin-left:auto;margin-right:auto;}
+        a:link {color: #34536A;}
+        a:visited {color: #34536A;}
+        a:active {color: #34536A;}
+        a:hover {color: #34536A;}
+    </style>
+</head>
+<body>
+    <p><a href="http://symplified.biz/">symplified.biz</a></p>
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <div>
+        The page you were trying to reach does not exist. Or, maybe it has moved.
+        You can start again from <a href="http://symplified.biz/">home</a> or go back to the <a href="javascript:%20history.go(-1)">previous page</a>.
+    </div>
+</body>
+</html>
+  
+[2021-07-26 10:37:49] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:37:49] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:37:49] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["2454dec1-a4d3-413d-9220-ad9ad3ecc2bf"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:37:49] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:37:49] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/userChannels  
+[2021-07-26 10:37:49] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:37:49] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:37:50] local.INFO: Telegram <- RESP <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>404 &mdash; Page Not Found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="404 - Page Not Found"/>
+    <style type="text/css">
+        body {font-size:14px; color:#777777; font-family:arial; text-align:center;}
+        h1 {font-size:180px; color:#99A7AF; margin: 70px 0 0 0;}
+        h2 {color: #DE6C5D; font-family: arial; font-size: 20px; font-weight: bold; letter-spacing: -1px; margin: -3px 0 39px;}
+        p {width:375px; text-align:center; margin-left:auto;margin-right:auto; margin-top: 30px }
+        div {width:375px; text-align:center; margin-left:auto;margin-right:auto;}
+        a:link {color: #34536A;}
+        a:visited {color: #34536A;}
+        a:active {color: #34536A;}
+        a:hover {color: #34536A;}
+    </style>
+</head>
+<body>
+    <p><a href="http://symplified.biz/">symplified.biz</a></p>
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <div>
+        The page you were trying to reach does not exist. Or, maybe it has moved.
+        You can start again from <a href="http://symplified.biz/">home</a> or go back to the <a href="javascript:%20history.go(-1)">previous page</a>.
+    </div>
+</body>
+</html>
+  
+[2021-07-26 10:39:02] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:39:02] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:39:02] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["d6cbfb6f-2ae0-476d-a143-2c287c4486e6"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:39:02] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:39:02] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/userChannels  
+[2021-07-26 10:39:02] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:39:02] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:39:03] local.INFO: Telegram <- RESP <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <title>404 &mdash; Page Not Found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="404 - Page Not Found"/>
+    <style type="text/css">
+        body {font-size:14px; color:#777777; font-family:arial; text-align:center;}
+        h1 {font-size:180px; color:#99A7AF; margin: 70px 0 0 0;}
+        h2 {color: #DE6C5D; font-family: arial; font-size: 20px; font-weight: bold; letter-spacing: -1px; margin: -3px 0 39px;}
+        p {width:375px; text-align:center; margin-left:auto;margin-right:auto; margin-top: 30px }
+        div {width:375px; text-align:center; margin-left:auto;margin-right:auto;}
+        a:link {color: #34536A;}
+        a:visited {color: #34536A;}
+        a:active {color: #34536A;}
+        a:hover {color: #34536A;}
+    </style>
+</head>
+<body>
+    <p><a href="http://symplified.biz/">symplified.biz</a></p>
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <div>
+        The page you were trying to reach does not exist. Or, maybe it has moved.
+        You can start again from <a href="http://symplified.biz/">home</a> or go back to the <a href="javascript:%20history.go(-1)">previous page</a>.
+    </div>
+</body>
+</html>
+  
+[2021-07-26 10:41:52] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:41:52] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:41:52] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["907ddd82-f5ae-4f0f-8dcd-ae2cd2e03e3d"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:41:52] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:41:52] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 10:41:52] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:41:52] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:41:53] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T10:41:50.735+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 10:45:13] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:45:13] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:45:13] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["99a191be-61b8-4a0c-90d8-1065a20247e9"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:45:13] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:45:14] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 10:45:14] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:45:14] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:45:15] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T10:45:12.463+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 10:45:51] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:45:51] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:45:51] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["9c83bc0e-2b57-467c-befb-407592e4fc4f"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:45:51] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:45:52] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 10:45:52] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:45:52] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:45:53] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T10:45:50.492+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 10:46:14] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:46:14] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:46:14] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["e4a537c6-c510-4d10-a562-008d6581df4b"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:46:14] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:46:14] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 10:46:14] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:46:14] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:46:15] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T10:46:13.071+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 10:46:15] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 10:46:59] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 10:46:59] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 10:46:59] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["e7dcf5a7-18dc-4ca4-91f8-3e74d9cfb899"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 10:46:59] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 10:46:59] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 10:46:59] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 10:46:59] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 10:47:00] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T10:46:57.771+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:28:19] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:28:19] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:28:19] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["be39f239-92be-4f31-a3d2-f6ac146d3277"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:28:19] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:28:19] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:28:19] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:28:19] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:28:20] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:28:17.940+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:28:20] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:28:31] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:28:31] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:28:31] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["7298758e-0401-4655-aabb-43075ff149f8"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:28:31] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:28:32] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:28:32] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:28:32] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:28:33] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:28:30.748+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:28:33] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:29:38] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:29:38] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:29:38] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["49dc6ea9-bb89-4ea8-a3b6-2c8d5f612988"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:29:38] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:29:38] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:29:38] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:29:38] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:29:39] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:29:36.764+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:30:12] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:30:12] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:30:12] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["aef04a6c-9f09-496b-924d-b75d160ced3b"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:30:12] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:30:13] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:30:13] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:30:13] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:30:14] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:30:11.499+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:31:11] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:31:11] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:31:11] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["fdf0c148-3db5-4fa5-ad12-6fc3dcf34a19"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:31:11] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:31:12] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:31:12] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:31:12] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:31:13] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:31:10.331+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:31:13] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:31:29] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:31:29] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:31:29] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["e884524e-6466-4f91-86e3-d3330a92e98b"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:31:29] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:31:29] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:31:29] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:31:29] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:31:30] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:31:27.974+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:31:30] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:33:25] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:33:25] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:33:25] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["2abdec37-aadf-4f31-b6b4-cd54e3b535dd"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:33:25] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:33:26] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:33:26] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:33:26] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:33:27] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:33:24.505+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:34:12] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:34:12] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:34:12] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["cd991e8d-ec69-4507-b1cc-e44c6b5a55ca"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:34:12] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:34:13] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:34:13] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:34:13] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:34:14] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:34:11.456+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:36:35] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:36:35] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:36:35] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["87cb041e-0596-412c-8e32-b7d77d1350bd"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:36:35] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:36:35] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:36:35] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:36:35] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:36:36] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:36:33.835+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:36:36] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:37:19] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:37:19] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:37:19] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["2ff3399e-7d7a-4816-87ff-cdd252ea6e85"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:37:19] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:37:20] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:37:20] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:37:20] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:37:21] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:37:18.461+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:37:21] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:38:27] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:38:27] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:38:27] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["0d2b301d-0255-405a-8b68-615b6fbfbfa0"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:38:27] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:38:28] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:38:28] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:38:28] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:38:29] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:38:26.687+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:39:08] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:39:08] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:39:08] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["b06c1247-8782-4794-a1ae-bf0782c43094"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:39:08] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:39:08] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:39:08] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:39:08] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:39:09] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:39:07.006+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:39:09] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:44:56] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:44:56] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:44:56] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["55a0a6cd-f5e7-4dfb-b51b-a9cf9825cd43"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:44:56] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:44:57] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:44:57] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:44:57] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:44:58] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:44:55.667+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:44:58] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:46:19] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:46:19] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:46:19] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["7b888f31-f6fd-401b-b8f0-fea6166fc55c"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:46:19] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:46:20] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:46:20] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:46:20] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:46:21] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:46:18.707+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:46:21] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:46:46] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:46:46] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:46:46] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["5c3133b3-5f97-4987-8b69-1fc2550d04ac"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:46:46] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:46:47] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:46:47] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:46:47] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:46:48] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:46:45.374+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:47:12] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:47:12] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:47:12] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["34339ec5-6e79-4248-b1c7-ebe8c0f83441"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:47:12] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:47:13] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:47:13] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:47:13] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:47:14] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:47:11.475+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:47:14] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:47:53] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:47:53] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:47:53] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["f2efd746-26a2-447b-b5bf-5babb6514455"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:47:53] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:47:53] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:47:53] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:47:53] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:47:54] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:47:52.301+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:47:55] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:48:13] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:48:13] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:48:13] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["641e7a20-dd17-4b8d-88a9-c5618b7ad511"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:48:13] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:48:13] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:48:13] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:48:13] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:48:14] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:48:12.078+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:48:14] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:49:21] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:49:21] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:49:21] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["45435d61-3763-4517-8ef0-288021dc98b7"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:49:21] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:49:22] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:49:22] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:49:22] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:49:23] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:49:21.240+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:49:24] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:50:18] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:50:18] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:50:18] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["6414835e-50fb-456e-841b-61deb17afd31"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:50:18] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:50:18] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:50:18] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:50:18] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:50:19] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:50:17.096+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:50:20] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:50:59] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:50:59] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:50:59] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["db2dda7c-b866-47e9-bd73-6a0c19c116b6"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:50:59] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:50:59] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:50:59] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:50:59] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:51:00] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:50:57.919+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:51:00] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:51:21] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:51:21] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:51:21] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["db2e2cee-2374-4bfe-9970-65ba2b45b9fe"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:51:21] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:51:22] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:51:22] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:51:22] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:51:23] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:51:20.571+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:51:23] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:52:06] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:52:06] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:52:06] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["a49854a6-5924-4df2-87d5-661b8f8e84b3"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:52:06] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:52:07] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:52:07] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:52:07] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:52:08] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:52:05.633+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:52:08] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 11:52:43] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 11:52:43] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 11:52:43] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["3f28eb54-7545-48ff-beac-446c6cce6890"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 11:52:43] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 11:52:43] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 11:52:43] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 11:52:43] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 11:52:44] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T11:52:41.652+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 11:52:44] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 12:18:26] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 12:18:26] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 12:18:26] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["599d6ec3-6ac8-457d-8ada-3aecb42fc28e"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 12:18:26] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 12:18:26] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 12:18:26] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 12:18:26] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 12:18:27] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T12:18:24.875+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 12:18:27] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 12:19:13] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 12:19:13] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 12:19:13] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["2176f854-d51e-493b-addf-f4a042735446"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 12:19:13] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 12:19:14] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 12:19:14] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 12:19:14] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 12:19:15] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T12:19:12.594+00:00","status":200,"message":"OK","data":{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":0,"totalElements":0,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"size":20,"number":0,"empty":true},"path":"/userChannels"}  
+[2021-07-26 12:19:15] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 12:23:12] local.INFO: LOG Start Push TextMessage ------------------------------------------------  
+[2021-07-26 12:23:12] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/textmessage/push  
+[2021-07-26 12:23:12] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["3ab2cb5e-4605-471c-a4ad-af1a7f2c84e8"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["448"]} 
+[2021-07-26 12:23:12] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"Welcome","subTitle":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":null,"message":"HiwelcometoMiqdaadfoods.Pleasetypeyournametobegin.","refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 12:23:12] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 12:23:12] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 12:23:12] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 12:23:13] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T12:23:11.212+00:00","status":200,"message":"OK","data":{"content":[{"id":"a93efb41-ca83-48c9-8b2c-d966f093d2cd","refId":"@SymplifiedBot","userId":"51a4bc43-53e0-4e6e-9fb0-fff57cf02ba9","channelName":"telegram","token":"1534661646:AAHtbvPxQGgKH3R-ne6qe0sURTrz7hgOU4M"}],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":1,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":1,"size":20,"number":0,"empty":false},"path":"/userChannels"}  
+[2021-07-26 12:23:13] local.INFO: Telegram <- PATH https://api.telegram.org/bot1534661646:AAHtbvPxQGgKH3R-ne6qe0sURTrz7hgOU4M/sendmessage  
+[2021-07-26 12:23:13] local.INFO: Telegram <- HEADER {"Content-type":"application\/json"}  
+[2021-07-26 12:23:13] local.INFO: Telegram <- PARAM chat_id=710117282&text=%2AWelcome%2A%0AHi+welcome+to+Miqdaad+foods.+Please+type+your+name+to+begin.&parse_mode=markdown  
+[2021-07-26 12:23:14] local.INFO: Telegram <- RESP {"ok":true,"result":{"message_id":1145,"from":{"id":1534661646,"is_bot":true,"first_name":"Symplified","username":"SymplifiedBot"},"chat":{"id":710117282,"first_name":"Ahmad Miqdaad","last_name":"Abdul Aziz","username":"admiraludon","type":"private"},"date":1627302192,"text":"Welcome\nHi welcome to Miqdaad foods. Please type your name to begin.","entities":[{"offset":0,"length":7,"type":"bold"}]}}  
+[2021-07-26 12:23:14] local.INFO: LOG End Push TextMessage ------------------------------------------------  
+[2021-07-26 12:24:49] local.INFO: LOG Start Push MenuMessage ------------------------------------------------  
+[2021-07-26 12:24:49] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/menumessage/push  
+[2021-07-26 12:24:49] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["85c6ad11-a919-46c0-80bb-bc2889997003"],"host":["localhost"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["647"]} 
+[2021-07-26 12:24:49] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"MainMenu","subTitle":"HiAhmad,whatwouldyouliketodo?","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":[{"type":"postback","title":"Order","payload":"1"},{"type":"postback","title":"TalktoCSR","payload":"2"},{"type":"postback","title":"Complain","payload":"3"}],"message":null,"refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 12:24:50] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 12:24:50] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 12:24:50] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 12:24:51] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T12:24:48.894+00:00","status":200,"message":"OK","data":{"content":[{"id":"a93efb41-ca83-48c9-8b2c-d966f093d2cd","refId":"@SymplifiedBot","userId":"51a4bc43-53e0-4e6e-9fb0-fff57cf02ba9","channelName":"telegram","token":"1534661646:AAHtbvPxQGgKH3R-ne6qe0sURTrz7hgOU4M"}],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":1,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":1,"size":20,"number":0,"empty":false},"path":"/userChannels"}  
+[2021-07-26 12:24:51] local.INFO: Telegram <- PATH https://api.telegram.org/bot1534661646:AAHtbvPxQGgKH3R-ne6qe0sURTrz7hgOU4M/sendmessage  
+[2021-07-26 12:24:51] local.INFO: Telegram <- HEADER {"Content-type":"application\/json"}  
+[2021-07-26 12:24:51] local.INFO: Telegram <- PARAM chat_id=710117282&text=%2AMain+Menu%2A%0AHi+Ahmad%2C+what+would+you+like+to+do%3F&parse_mode=markdown&reply_markup=%7B%22inline_keyboard%22%3A%5B%5B%7B%22text%22%3A%221.+Order%22%2C%22callback_data%22%3A1%7D%5D%2C%5B%7B%22text%22%3A%222.+Talk+to+CSR%22%2C%22callback_data%22%3A2%7D%5D%2C%5B%7B%22text%22%3A%223.+Complain%22%2C%22callback_data%22%3A3%7D%5D%5D%7D  
+[2021-07-26 12:24:52] local.INFO: Telegram <- RESP {"ok":true,"result":{"message_id":1147,"from":{"id":1534661646,"is_bot":true,"first_name":"Symplified","username":"SymplifiedBot"},"chat":{"id":710117282,"first_name":"Ahmad Miqdaad","last_name":"Abdul Aziz","username":"admiraludon","type":"private"},"date":1627302289,"text":"Main Menu\nHi Ahmad, what would you like to do?","entities":[{"offset":0,"length":9,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"1. Order","callback_data":"1"}],[{"text":"2. Talk to CSR","callback_data":"2"}],[{"text":"3. Complain","callback_data":"3"}]]}}}  
+[2021-07-26 12:24:52] local.INFO: LOG End Push MenuMessage ------------------------------------------------  
+[2021-07-26 12:25:41] local.INFO: LOG Start Push MenuMessage ------------------------------------------------  
+[2021-07-26 12:25:41] local.INFO: Backend -> PATH http://tgw.localhost.test/telegram/callback/menumessage/push  
+[2021-07-26 12:25:41] local.INFO: Backend -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["5d53aa7b-2872-4977-a6b4-e69aed101443"],"host":["tgw.localhost.test"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["647"]} 
+[2021-07-26 12:25:41] local.INFO: Backend -> BODY {"recipientIds":["710117282"],"title":"MainMenu","subTitle":"HiAhmad,whatwouldyouliketodo?","url":"https://www.techopedia.com/images/uploads/6e13a6b3-28b6-454a-bef3-92d3d5529007.jpeg","urlType":"IMAGE","menuItems":[{"type":"postback","title":"Order","payload":"1"},{"type":"postback","title":"TalktoCSR","payload":"2"},{"type":"postback","title":"Complain","payload":"3"}],"message":null,"refId":"710117282","referenceId":"@SymplifiedBot","guest":true}  
+[2021-07-26 12:25:41] local.INFO: Telegram <- PATH https://api.symplified.biz/user-service/v1/userChannels  
+[2021-07-26 12:25:41] local.INFO: Telegram <- HEADER {"Content-type":"application\/json","Authorization":"Bearer accessToken"}  
+[2021-07-26 12:25:41] local.INFO: Telegram <- PARAM refId=%40SymplifiedBot&channelName=telegram  
+[2021-07-26 12:25:42] local.INFO: Telegram <- RESP {"timestamp":"2021-07-26T12:25:40.142+00:00","status":200,"message":"OK","data":{"content":[{"id":"a93efb41-ca83-48c9-8b2c-d966f093d2cd","refId":"@SymplifiedBot","userId":"51a4bc43-53e0-4e6e-9fb0-fff57cf02ba9","channelName":"telegram","token":"1534661646:AAHtbvPxQGgKH3R-ne6qe0sURTrz7hgOU4M"}],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"pageNumber":0,"pageSize":20,"offset":0,"paged":true,"unpaged":false},"totalPages":1,"totalElements":1,"last":true,"first":true,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":1,"size":20,"number":0,"empty":false},"path":"/userChannels"}  
+[2021-07-26 12:25:42] local.INFO: Telegram <- PATH https://api.telegram.org/bot1534661646:AAHtbvPxQGgKH3R-ne6qe0sURTrz7hgOU4M/sendmessage  
+[2021-07-26 12:25:42] local.INFO: Telegram <- HEADER {"Content-type":"application\/json"}  
+[2021-07-26 12:25:42] local.INFO: Telegram <- PARAM chat_id=710117282&text=%2AMain+Menu%2A%0AHi+Ahmad%2C+what+would+you+like+to+do%3F&parse_mode=markdown&reply_markup=%7B%22inline_keyboard%22%3A%5B%5B%7B%22text%22%3A%221.+Order%22%2C%22callback_data%22%3A1%7D%5D%2C%5B%7B%22text%22%3A%222.+Talk+to+CSR%22%2C%22callback_data%22%3A2%7D%5D%2C%5B%7B%22text%22%3A%223.+Complain%22%2C%22callback_data%22%3A3%7D%5D%5D%7D  
+[2021-07-26 12:25:43] local.INFO: Telegram <- RESP {"ok":true,"result":{"message_id":1149,"from":{"id":1534661646,"is_bot":true,"first_name":"Symplified","username":"SymplifiedBot"},"chat":{"id":710117282,"first_name":"Ahmad Miqdaad","last_name":"Abdul Aziz","username":"admiraludon","type":"private"},"date":1627302341,"text":"Main Menu\nHi Ahmad, what would you like to do?","entities":[{"offset":0,"length":9,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"1. Order","callback_data":"1"}],[{"text":"2. Talk to CSR","callback_data":"2"}],[{"text":"3. Complain","callback_data":"3"}]]}}}  
+[2021-07-26 12:25:43] local.INFO: LOG End Push MenuMessage ------------------------------------------------  
+[2021-07-26 12:26:34] local.INFO: LOG Start Incoming ------------------------------------------------  
+[2021-07-26 12:26:34] local.INFO: Telegram -> PATH http://tgw.localhost.test/telegram/incoming/@SymplifiedBot  
+[2021-07-26 12:26:34] local.INFO: Telegram -> HEADER {"accept":["application/json"],"content-type":["application/json"],"user-agent":["PostmanRuntime/7.28.2"],"postman-token":["ee5c09e1-6336-45bf-9f84-1172213f7c83"],"host":["localhost"],"accept-encoding":["gzip, deflate, br"],"connection":["keep-alive"],"content-length":["1058"]} 
+[2021-07-26 12:26:34] local.INFO: Telegram -> BODY {"update_id":181191902,"message":{"message_id":1057,"from":{"id":710117282,"is_bot":false,"first_name":"AhmadMiqdaad","last_name":"AbdulAziz","username":"admiraludon","language_code":"en"},"chat":{"id":710117282,"first_name":"AhmadMiqdaad","last_name":"AbdulAziz","username":"admiraludon","type":"private"},"date":1625135218,"sticker":{"width":512,"height":512,"emoji":"\ud83d\udc4d","set_name":"HamsterBernard","is_animated":true,"thumb":{"file_id":"AAMCAgADGQEAAgQhYN2Ycm2Mjhl-MocB5MlfRA8xeq4AAgQAAztgJBSzq-tUb5XhqwEAB20AAyAE","file_unique_id":"AQADBAADO2AkFHI","file_size":5144,"width":128,"height":128},"file_id":"CAACAgIAAxkBAAIEIWDdmHJtjI4ZfjKHAeTJX0QPMXquAAIEAAM7YCQUs6vrVG-V4asgBA","file_unique_id":"AgADBAADO2AkFA","file_size":21288}}}  
+[2021-07-26 12:26:35] local.DEBUG: TG-Wrapper -- MongoDB Status msisdn[710117282]  
+[2021-07-26 12:26:35] local.DEBUG: TG-Wrapper -- MongoDB Status result[{}]  
+[2021-07-26 12:26:35] local.INFO: KbotCore <- PATH http://209.58.160.20:5001/inbound/?refrenceId=@SymplifiedBot&senderId=710117282  
+[2021-07-26 12:26:35] local.INFO: KbotCore <- HEADER {"Content-type":"application\/json"}  
+[2021-07-26 12:26:35] local.INFO: KbotCore <- BODY {"callbackUrl":"http:\/\/tgw.localhost.test\/telegram\/","data":"Non text messages sent by telegram client","isGuest":true,"msgId":"60fea9fbc9952","referral":"60fea9fbc9952","referenceId":"@SymplifiedBot"}  
+[2021-07-26 12:26:36] local.INFO: KbotCore <- RESP 200 {"timestamp":"2021-07-26 20:26:33.761","status":200,"message":"OK","path":"/inbound/"}  
+[2021-07-26 12:26:36] local.INFO: LOG End Incoming ------------------------------------------------  

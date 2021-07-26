@@ -48,17 +48,6 @@ class PushMenuMessageController extends Controller
             );
         }
 
-        if ($request["refId"] !== $request["recipientIds"][0]) {
-            return response()->json(
-                [
-                    'status' => false,
-                    'errors' => "refId need to match recipientId. refId[".$request["refId"]."] != recipientId[".$request['recipientIds'][0]."]",
-                ],
-                400
-            );
-        }
-
-
         // generating menu options
         $textHeader = "*" . $request["title"] . "*" . "\n" . $request["subTitle"];
 
@@ -109,8 +98,13 @@ class PushMenuMessageController extends Controller
             // )
         ];
 
+        $message = [
+            "textHeader" => $textHeader,
+            "keyboard" => $keyboard
+        ];
+
         // calling telegram
-        $telegram = new TelegramModel($request["recipientIds"][0],$textHeader,$keyboard);
+        $telegram = new TelegramModel($request["recipientIds"][0],$message,$request["referenceId"]);
         $telegram->send();
         \Log::channel('transaction')->info("LOG End Push MenuMessage ------------------------------------------------");
     }

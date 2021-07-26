@@ -43,4 +43,9 @@ return [
         'token' => env('TELEGRAM_TOKEN')
     ],
 
+    'userservice' => [
+        'url' => env('USER_SERVICE_URL','http://localhost'),
+        'token' => env('USER_SERVICE_TOKEN','accessToken')
+    ],
+
 ];

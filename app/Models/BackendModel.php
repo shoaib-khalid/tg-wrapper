@@ -50,7 +50,7 @@ class BackendModel extends Model
         $downstream = $this->downstream;
 
         $messageid = (string)uniqid();
-        $header = ["Content-type: application/json"];
+        $header = ["Content-type" => "application/json"];
         $object = [
             'callbackUrl' => $appurl.'/telegram/',
             'data' => $message,
@@ -62,6 +62,7 @@ class BackendModel extends Model
 
         // send to core
         \Log::channel('transaction')->info("$downstream <- PATH " . $backendurl);
+        \Log::channel('transaction')->info("$downstream <- HEADER " . json_encode($header));
         \Log::channel('transaction')->info("$downstream <- BODY " . json_encode($object));
         $response = Http::withHeaders($header)->post($backendurl, $object);
         \Log::channel('transaction')->info("$downstream <- RESP " . $response->status() . " " . $response);

@@ -5,12 +5,12 @@
             "key": "baseUrl",
             "type": "string",
             "name": "string",
-            "value": "tgw.symplified.biz"
+            "value": "tgw.localhost.test"
         }
     ],
     "info": {
         "name": "Laravel",
-        "_postman_id": "10103532-5c36-47bb-b620-d9b5bcd89f71",
+        "_postman_id": "2c7d21a3-2aa9-4583-ae3b-8050a072427a",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -23,16 +23,16 @@
                     "name": "Receive a newly incoming request from telegram client",
                     "request": {
                         "url": {
-                            "protocol": "https",
+                            "protocol": "http",
                             "host": "{{baseUrl}}",
                             "path": "telegram\/incoming\/:botid",
                             "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/telegram\/incoming\/:botid",
+                            "raw": "http:\/\/{{baseUrl}}\/telegram\/incoming\/:botid",
                             "variable": [
                                 {
                                     "id": "botid",
                                     "key": "botid",
-                                    "value": "similique",
+                                    "value": "dolorem",
                                     "description": ""
                                 }
                             ]
@@ -50,7 +50,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"callback_query\":{\"message\":{\"chat\":{\"id\":12},\"from\":{\"username\":\"doloremque\"},\"data\":\"laborum\"}},\"message\":{\"chat\":{\"id\":6},\"from\":{\"username\":\"deleniti\"},\"data\":\"sequi\"}}"
+                            "raw": "{\"callback_query\":{\"message\":{\"chat\":{\"id\":6},\"from\":{\"username\":\"aliquid\"},\"data\":\"quia\"}},\"message\":{\"chat\":{\"id\":18},\"from\":{\"username\":\"rerum\"},\"data\":\"tempora\"}}"
                         },
                         "description": "",
                         "auth": {
@@ -63,11 +63,11 @@
                     "name": "Sent a single text message to telegram client",
                     "request": {
                         "url": {
-                            "protocol": "https",
+                            "protocol": "http",
                             "host": "{{baseUrl}}",
                             "path": "telegram\/callback\/textmessage\/push",
                             "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/telegram\/callback\/textmessage\/push"
+                            "raw": "http:\/\/{{baseUrl}}\/telegram\/callback\/textmessage\/push"
                         },
                         "method": "POST",
                         "header": [
@@ -82,7 +82,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"recipientIds\":[\"iure\"],\"title\":\"et\",\"subTitle\":\"blanditiis\",\"message\":\"molestias\",\"refId\":\"quo\",\"referenceId\":\"perspiciatis\"}"
+                            "raw": "{\"recipientIds\":[\"est\"],\"title\":\"totam\",\"subTitle\":\"assumenda\",\"message\":\"minima\",\"refId\":\"amet\",\"referenceId\":\"autem\"}"
                         },
                         "description": "",
                         "auth": {
@@ -95,11 +95,11 @@
                     "name": "Send Menu Messages to telegram client",
                     "request": {
                         "url": {
-                            "protocol": "https",
+                            "protocol": "http",
                             "host": "{{baseUrl}}",
                             "path": "telegram\/callback\/menumessage\/push",
                             "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/telegram\/callback\/menumessage\/push"
+                            "raw": "http:\/\/{{baseUrl}}\/telegram\/callback\/menumessage\/push"
                         },
                         "method": "POST",
                         "header": [
@@ -114,7 +114,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"recipientIds\":[\"fuga\"],\"title\":\"nesciunt\",\"subTitle\":\"id\",\"menuItems\":[{\"type\":\"atque\",\"title\":\"eaque\",\"payload\":17}],\"refId\":\"nesciunt\",\"referenceId\":\"rerum\"}"
+                            "raw": "{\"recipientIds\":[\"quos\"],\"title\":\"aliquid\",\"subTitle\":\"quibusdam\",\"menuItems\":[{\"type\":\"sed\",\"title\":\"dolor\",\"payload\":10}],\"refId\":\"voluptas\",\"referenceId\":\"dolore\"}"
                         },
                         "description": "",
                         "auth": {
@@ -127,11 +127,11 @@
                     "name": "Revoke chat conversation from handover service",
                     "request": {
                         "url": {
-                            "protocol": "https",
+                            "protocol": "http",
                             "host": "{{baseUrl}}",
                             "path": "telegram\/callback\/conversation\/handle",
                             "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/telegram\/callback\/conversation\/handle"
+                            "raw": "http:\/\/{{baseUrl}}\/telegram\/callback\/conversation\/handle"
                         },
                         "method": "POST",
                         "header": [
@@ -146,7 +146,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"recipientIds\":[\"optio\"],\"title\":\"nihil\",\"subTitle\":\"ratione\",\"message\":\"rerum\",\"refId\":\"nemo\",\"referenceId\":\"et\"}"
+                            "raw": "{\"recipientIds\":[\"temporibus\"],\"title\":\"in\",\"subTitle\":\"facere\",\"message\":\"est\",\"refId\":\"voluptatem\",\"referenceId\":\"assumenda\"}"
                         },
                         "description": "",
                         "auth": {
@@ -159,11 +159,11 @@
                     "name": "Pass chat conversation to handover service",
                     "request": {
                         "url": {
-                            "protocol": "https",
+                            "protocol": "http",
                             "host": "{{baseUrl}}",
                             "path": "telegram\/callback\/conversation\/pass",
                             "query": [],
-                            "raw": "https:\/\/{{baseUrl}}\/telegram\/callback\/conversation\/pass"
+                            "raw": "http:\/\/{{baseUrl}}\/telegram\/callback\/conversation\/pass"
                         },
                         "method": "POST",
                         "header": [
@@ -178,7 +178,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"recipientIds\":[\"eos\"],\"title\":\"et\",\"subTitle\":\"recusandae\",\"message\":\"exercitationem\",\"refId\":\"magni\",\"referenceId\":\"et\"}"
+                            "raw": "{\"recipientIds\":[\"laborum\"],\"title\":\"a\",\"subTitle\":\"et\",\"message\":\"dolores\",\"refId\":\"a\",\"referenceId\":\"repellat\"}"
                         },
                         "description": "",
                         "auth": {

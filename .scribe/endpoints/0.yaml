@@ -17,7 +17,7 @@ endpoints:
         name: botid
         description: ''
         required: true
-        example: similique
+        example: dolorem
         type: string
     queryParameters: []
     bodyParameters:
@@ -43,7 +43,7 @@ endpoints:
         name: callback_query.message.chat.id
         description: ''
         required: false
-        example: 12
+        example: 6
         type: integer
       callback_query.message.from:
         name: callback_query.message.from
@@ -55,13 +55,13 @@ endpoints:
         name: callback_query.message.from.username
         description: ''
         required: false
-        example: doloremque
+        example: aliquid
         type: string
       callback_query.message.data:
         name: callback_query.message.data
         description: ''
         required: false
-        example: laborum
+        example: quia
         type: string
       message:
         name: message
@@ -79,7 +79,7 @@ endpoints:
         name: message.chat.id
         description: ''
         required: false
-        example: 6
+        example: 18
         type: integer
       message.from:
         name: message.from
@@ -91,13 +91,13 @@ endpoints:
         name: message.from.username
         description: ''
         required: false
-        example: deleniti
+        example: rerum
         type: string
       message.data:
         name: message.data
         description: ''
         required: false
-        example: sequi
+        example: tempora
         type: string
     responses: []
     responseFields: []
@@ -120,37 +120,37 @@ endpoints:
         description: ''
         required: true
         example:
-          - iure
+          - est
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: et
+        example: totam
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: false
-        example: blanditiis
+        example: assumenda
         type: string
       message:
         name: message
         description: ''
         required: true
-        example: molestias
+        example: minima
         type: string
       refId:
         name: refId
         description: ''
         required: true
-        example: quo
+        example: amet
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: perspiciatis
+        example: autem
         type: string
     responses: []
     responseFields: []
@@ -173,19 +173,19 @@ endpoints:
         description: ''
         required: true
         example:
-          - fuga
+          - quos
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: nesciunt
+        example: aliquid
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: true
-        example: id
+        example: quibusdam
         type: string
       menuItems:
         name: menuItems
@@ -198,31 +198,31 @@ endpoints:
         name: refId
         description: ''
         required: true
-        example: nesciunt
+        example: voluptas
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: rerum
+        example: dolore
         type: string
       'menuItems[].type':
         name: 'menuItems[].type'
         description: ''
         required: true
-        example: atque
+        example: sed
         type: string
       'menuItems[].title':
         name: 'menuItems[].title'
         description: ''
         required: true
-        example: eaque
+        example: dolor
         type: string
       'menuItems[].payload':
         name: 'menuItems[].payload'
         description: ''
         required: true
-        example: 17
+        example: 10
         type: integer
     responses: []
     responseFields: []
@@ -245,37 +245,37 @@ endpoints:
         description: ''
         required: true
         example:
-          - optio
+          - temporibus
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: nihil
+        example: in
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: true
-        example: ratione
+        example: facere
         type: string
       message:
         name: message
         description: ''
         required: true
-        example: rerum
+        example: est
         type: string
       refId:
         name: refId
         description: ''
         required: true
-        example: nemo
+        example: voluptatem
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: et
+        example: assumenda
         type: string
     responses: []
     responseFields: []
@@ -298,37 +298,37 @@ endpoints:
         description: ''
         required: true
         example:
-          - eos
+          - laborum
         type: 'string[]'
       title:
         name: title
         description: ''
         required: true
-        example: et
+        example: a
         type: string
       subTitle:
         name: subTitle
         description: ''
         required: true
-        example: recusandae
+        example: et
         type: string
       message:
         name: message
         description: ''
         required: true
-        example: exercitationem
+        example: dolores
         type: string
       refId:
         name: refId
         description: ''
         required: true
-        example: magni
+        example: a
         type: string
       referenceId:
         name: referenceId
         description: ''
         required: true
-        example: et
+        example: repellat
         type: string
     responses: []
     responseFields: []
