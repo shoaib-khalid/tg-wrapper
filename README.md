@@ -100,6 +100,30 @@ $ php artisan config:cache
 $ php artisan serve
 ```
 
+## Tar Gz Laravel Project
+Windows
+```
+Archive
+7z a -ttar -so files.tar . | 7z a -si files.tar.gz
+
+Extract
+7z x files.tar.gz -so | 7z x -si -ttar
+```
+
+Linux
+```
+Archive
+tar -czvf files.tar.gz dwt/
+
+Extract
+tar -xzvf files.tar.gz -C tmp/
+```
+
+Docker (Linux Alpine Image)
+```
+docker run --rm -it -v ${pwd}:/src -w /src hellyna/tar --exclude='telegram.tar.gz' -zcvf telegram.tar.gz .
+```
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

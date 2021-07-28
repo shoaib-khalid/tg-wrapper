@@ -19,5 +19,12 @@ ENV APACHE_DOCUMENT_ROOT=${APACHE_DOCUMENT_ROOT}
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
-# COPY $PACKAGE_NAME /var/www/html/$PACKAGE_NAME
-# RUN tar -xvzf /var/www/html/$PACKAGE_NAME -C /var/www/html/
+COPY $PACKAGE_NAME /var/www/html/$PACKAGE_NAME
+RUN tar -xvzf /var/www/html/$PACKAGE_NAME -C /var/www/html/
+
+WORKDIR /var/www/html
+ADD "https://www.random.org/cgi-bin/randbyte?nbytes=10&format=h" skipcache
+RUN sed -ri -e 's!http://tgw.localhost.test!https://tgw.symplified.biz!g' /var/www/html/.env
+RUN php artisan key:generate
+RUN php artisan config:cache
+RUN php artisan scribe:generate --force
