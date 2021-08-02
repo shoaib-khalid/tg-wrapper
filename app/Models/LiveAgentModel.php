@@ -16,7 +16,12 @@ class LiveAgentModel extends Model
 		$dbUser=config('database.connections.mongodb.username');
 		$dbPass=config('database.connections.mongodb.password');
 
-		$client = new MongoDB("mongodb://$dbHost:$dbPort",["username" => $dbUser, "password" => $dbPass]);
+		if ($dbUser !== "" || $dbPass !=="") {
+			$client = new MongoDB("mongodb://$dbHost:$dbPort",["username" => $dbUser, "password" => $dbPass]);			
+		} else {
+			$client = new MongoDB("mongodb://$dbHost:$dbPort");
+		}
+
 		$db = $client->wswrapper;
 		$this->liveagent = $db->liveagent;
 	}
