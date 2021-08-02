@@ -5,7 +5,7 @@ current:
   major: 0
   minor: 0
   patch: 1
-  prerelease: alpha
+  prerelease: 
   buildmetadata:
   commit: 100001
   timestamp:
