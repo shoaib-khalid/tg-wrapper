@@ -22,7 +22,7 @@ class IncomingController extends Controller
         \Log::channel('transaction')->info("Telegram -> HEADER", $request->header());
         \Log::channel('transaction')->info("Telegram -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
 
-        $validator = Validator::make(
+        $validate = Validator::make(
             $request->all(), [ 
                 'callback_query' => 'prohibited_unless:message,null|array',
                 'callback_query.message.chat.id'  => 'prohibited_unless:message,null|integer',
@@ -36,13 +36,13 @@ class IncomingController extends Controller
             ]
         );
         
-        if ($validator->fails()) {
+        if ($validate->fails()) {
             \Log::channel('transaction')->info("Telegram <- RESP " . $validate->errors());
             \Log::channel('transaction')->info("LOG End Incoming ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
-                    'errors' => $validator->errors(),
+                    'errors' => $validate->errors(),
                 ],
                 400
             );
