@@ -61,11 +61,11 @@ class BackendModel extends Model
         ];
 
         // send to core
-        \Log::channel('transaction')->info("$downstream <- PATH " . $backendurl);
-        \Log::channel('transaction')->info("$downstream <- HEADER " . json_encode($header));
-        \Log::channel('transaction')->info("$downstream <- BODY " . json_encode($object));
+        \Log::channel('transaction')->debug("$downstream <- PATH " . $backendurl);
+        \Log::channel('transaction')->debug("$downstream <- HEADER " . json_encode($header));
+        \Log::channel('transaction')->debug("$downstream <- BODY " . json_encode($object));
         $response = Http::withHeaders($header)->post($backendurl, $object);
-        \Log::channel('transaction')->info("$downstream <- RESP " . $response->status() . " " . $response);
+        \Log::channel('transaction')->debug("$downstream <- RESP " . $response->status() . " " . $response);
 	}
 
 }

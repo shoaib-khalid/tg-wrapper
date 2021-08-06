@@ -105,7 +105,7 @@ return [
             'driver' => 'single',
             // 'tap' => [],
             'path' => storage_path('logs/transaction.log'),
-            'level' => 'debug'
+            'level' => env('LOG_LEVEL', 'debug')
         ],
     ],
 

@@ -17,10 +17,10 @@ class IncomingController extends Controller
      */
     public function store(Request $request, $botid) {
         
-        \Log::channel('transaction')->info("LOG Start Incoming ------------------------------------------------");
-        \Log::channel('transaction')->info("Telegram -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
-        \Log::channel('transaction')->info("Telegram -> HEADER", $request->header());
-        \Log::channel('transaction')->info("Telegram -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
+        \Log::channel('transaction')->debug("LOG Start Incoming ------------------------------------------------");
+        \Log::channel('transaction')->debug("Telegram -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
+        \Log::channel('transaction')->debug("Telegram -> HEADER", $request->header());
+        \Log::channel('transaction')->debug("Telegram -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
 
         $validate = Validator::make(
             $request->all(), [ 
@@ -37,8 +37,8 @@ class IncomingController extends Controller
         );
         
         if ($validate->fails()) {
-            \Log::channel('transaction')->info("Telegram <- RESP " . $validate->errors());
-            \Log::channel('transaction')->info("LOG End Incoming ------------------------------------------------");
+            \Log::channel('transaction')->debug("Telegram <- RESP " . $validate->errors());
+            \Log::channel('transaction')->debug("LOG End Incoming ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
@@ -63,8 +63,8 @@ class IncomingController extends Controller
             }
         } else {
             $description = "Either callback query field or message field can't be null";
-            \Log::channel('transaction')->info("Backend <- RESP " . $description);
-            \Log::channel('transaction')->info("LOG End Incoming ------------------------------------------------");
+            \Log::channel('transaction')->debug("Backend <- RESP " . $description);
+            \Log::channel('transaction')->debug("LOG End Incoming ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
@@ -77,7 +77,7 @@ class IncomingController extends Controller
         // determine routing
         $backend = new BackendModel($userId,$message,$botid);
         $backend->send();
-        \Log::channel('transaction')->info("LOG End Incoming ------------------------------------------------");
+        \Log::channel('transaction')->debug("LOG End Incoming ------------------------------------------------");
     }//end store()
 
 }
