@@ -107,6 +107,13 @@ return [
             'path' => storage_path('logs/transaction.log'),
             'level' => env('LOG_LEVEL', 'debug')
         ],
+
+        'csv' => [
+            'driver' => 'single',
+            'tap' => [App\Logging\CSVFormatter::class],
+            'path' => storage_path('logs/transaction.csv'),
+            'level' => env('LOG_LEVEL', 'info')
+        ]
     ],
 
 ];

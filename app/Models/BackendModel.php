@@ -66,6 +66,15 @@ class BackendModel extends Model
         \Log::channel('transaction')->debug("$downstream <- BODY " . json_encode($object));
         $response = Http::withHeaders($header)->post($backendurl, $object);
         \Log::channel('transaction')->debug("$downstream <- RESP " . $response->status() . " " . $response);
+
+        $reqinfo = [
+            "PATH" => $backendurl,
+            "HEADER" => $header,
+            "BODY" => $object,
+            "RESPONSE" => $response->body(),
+            "RESPONSE_STATUS" => $response->status()
+        ];
+        \Log::channel('csv')->info("Send to $downstream",$reqinfo);
 	}
 
 }

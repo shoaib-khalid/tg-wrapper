@@ -16,14 +16,19 @@ class LiveAgentModel extends Model
 		$dbUser=config('database.connections.mongodb.username');
 		$dbPass=config('database.connections.mongodb.password');
 
+		$credentials = [];
 		if ($dbUser !== "" || $dbPass !=="") {
-			$client = new MongoDB("mongodb://$dbHost:$dbPort",["username" => $dbUser, "password" => $dbPass]);			
-		} else {
-			$client = new MongoDB("mongodb://$dbHost:$dbPort");
+			$credentials = ["username" => $dbUser, "password" => $dbPass];			
 		}
 
-		$db = $client->wswrapper;
-		$this->liveagent = $db->liveagent;
+		try {
+			$client = new MongoDB("mongodb://$dbHost:$dbPort",$credentials);
+			$db = $client->wswrapper;
+			$this->liveagent = $db->liveagent;
+			\Log::channel('csv')->info("Calling MongoDB",["db"=>"wswrapper", "collection"=>"liveagent"]);
+		} catch(\Exception $e) {
+			\Log::channel('csv')->error("MongoDB Error",["error"=>$e]);
+		}
 	}
 	
 	// get liveAgent routing

@@ -16,10 +16,19 @@ class PushTextMessageController extends Controller
      */
     public function store(Request $request) {
 
-        \Log::channel('transaction')->debug("LOG Start Push TextMessage ------------------------------------------------");
-        \Log::channel('transaction')->debug("Backend -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
-        \Log::channel('transaction')->debug("Backend -> HEADER", $request->header());
-        \Log::channel('transaction')->debug("Backend -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
+        $reqinfo = [
+            "METHOD" => "PushTextMessage",
+            "PATH" => config('app.url') . $request->getRequestUri(),
+            "HEADER" => $request->header(),
+            "BODY" => $request->getContent()
+        ];
+
+        \Log::channel('csv')->info("Receive " . $reqinfo["METHOD"] . " Request",$reqinfo);
+
+        \Log::channel('transaction')->debug("LOG Start " . $reqinfo["METHOD"] . " ------------------------------------------------");
+        \Log::channel('transaction')->debug("Backend -> PATH " . $reqinfo["PATH"]);
+        \Log::channel('transaction')->debug("Backend -> HEADER", $reqinfo["HEADER"]);
+        \Log::channel('transaction')->debug("Backend -> BODY " . preg_replace('/[\r\n\t ]+/',' ',$reqinfo["BODY"]));
 
         $validate = Validator::make(
             $request->all(), [ 
@@ -34,7 +43,7 @@ class PushTextMessageController extends Controller
             
         if ($validate->fails()) {
             \Log::channel('transaction')->debug("Backend <- RESP " . $validate->errors());
-            \Log::channel('transaction')->debug("LOG End Push TextMessage ------------------------------------------------");
+            \Log::channel('transaction')->debug("LOG End " . $reqinfo["METHOD"] . " ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
@@ -47,7 +56,7 @@ class PushTextMessageController extends Controller
         if (count($request["recipientIds"]) > 1) {
             $description = "Multiple recipientIds detected. This API only accept only 1 recipientId";
             \Log::channel('transaction')->debug("Backend <- RESP " . $description);
-            \Log::channel('transaction')->debug("LOG End Push TextMessage ------------------------------------------------");
+            \Log::channel('transaction')->debug("LOG End " . $reqinfo["METHOD"] . " ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
@@ -65,6 +74,6 @@ class PushTextMessageController extends Controller
         // calling telegram
         $telegram = new TelegramModel($request["recipientIds"][0],$textmessage,$request["referenceId"]);
         $telegram->send();
-        \Log::channel('transaction')->debug("LOG End Push TextMessage ------------------------------------------------");
+        \Log::channel('transaction')->debug("LOG End " . $reqinfo["METHOD"] . " ------------------------------------------------");
     }
 }

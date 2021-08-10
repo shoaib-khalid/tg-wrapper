@@ -66,6 +66,15 @@ class TelegramModel extends Model
         \Log::channel('transaction')->debug("Telegram <- PARAM " . $parameters);
         $response = Http::withHeaders($header)->get($endpoint . "?" . $parameters);
         \Log::channel('transaction')->debug("Telegram <- RESP " . $response);
+
+        $reqinfo = [
+            "PATH" => $endpoint,
+            "HEADER" => $header,
+            "PARAMETERS" => $parameters,
+            "RESPONSE" => $response->body(),
+            "RESPONSE_STATUS" => $response->status()
+        ];
+        \Log::channel('csv')->info("Send to Telegram",$reqinfo);
     }
 
     private function getUserServiceByRefId($refId) {

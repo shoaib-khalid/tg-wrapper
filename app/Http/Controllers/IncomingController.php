@@ -16,11 +16,20 @@ class IncomingController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request, $botid) {
-        
-        \Log::channel('transaction')->debug("LOG Start Incoming ------------------------------------------------");
-        \Log::channel('transaction')->debug("Telegram -> PATH " . config('app.url') . preg_replace('/[\r\n\t ]+/','',$request->getRequestUri()));
-        \Log::channel('transaction')->debug("Telegram -> HEADER", $request->header());
-        \Log::channel('transaction')->debug("Telegram -> BODY " . preg_replace('/[\r\n\t ]+/','',$request->getContent()));
+
+        $reqinfo = [
+            "METHOD" => "Incoming",
+            "PATH" => config('app.url') . $request->getRequestUri(),
+            "HEADER" => $request->header(),
+            "BODY" => $request->getContent()
+        ];
+
+        \Log::channel('csv')->info("Receive " . $reqinfo["METHOD"] . " Request",$reqinfo);
+
+        \Log::channel('transaction')->debug("LOG Start " . $reqinfo["METHOD"] . " ------------------------------------------------");
+        \Log::channel('transaction')->debug("Backend -> PATH " . $reqinfo["PATH"]);
+        \Log::channel('transaction')->debug("Backend -> HEADER", $reqinfo["HEADER"]);
+        \Log::channel('transaction')->debug("Backend -> BODY " . preg_replace('/[\r\n\t ]+/',' ',$reqinfo["BODY"]));
 
         $validate = Validator::make(
             $request->all(), [ 
@@ -38,7 +47,7 @@ class IncomingController extends Controller
         
         if ($validate->fails()) {
             \Log::channel('transaction')->debug("Telegram <- RESP " . $validate->errors());
-            \Log::channel('transaction')->debug("LOG End Incoming ------------------------------------------------");
+            \Log::channel('transaction')->debug("LOG End " . $reqinfo["METHOD"] . " ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
@@ -64,7 +73,7 @@ class IncomingController extends Controller
         } else {
             $description = "Either callback query field or message field can't be null";
             \Log::channel('transaction')->debug("Backend <- RESP " . $description);
-            \Log::channel('transaction')->debug("LOG End Incoming ------------------------------------------------");
+            \Log::channel('transaction')->debug("LOG End " . $reqinfo["METHOD"] . " ------------------------------------------------");
             return response()->json(
                 [
                     'status' => false,
@@ -77,7 +86,7 @@ class IncomingController extends Controller
         // determine routing
         $backend = new BackendModel($userId,$message,$botid);
         $backend->send();
-        \Log::channel('transaction')->debug("LOG End Incoming ------------------------------------------------");
+        \Log::channel('transaction')->debug("LOG End " . $reqinfo["METHOD"] . " ------------------------------------------------");
     }//end store()
 
 }
