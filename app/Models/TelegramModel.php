@@ -99,6 +99,15 @@ class TelegramModel extends Model
         $response = Http::withHeaders($header)->get($endpoint . "?" . $parameters);
         \Log::channel('transaction')->debug("User Service <- RESP " . $response);
 
+        $reqinfo = [
+            "PATH" => $endpoint,
+            "HEADER" => $header,
+            "PARAMETERS" => $parameters,
+            "RESPONSE" => $response->body(),
+            "RESPONSE_STATUS" => $response->status()
+        ];
+        \Log::channel('csv')->info("Query to User Service",$reqinfo);
+
         if ($response["status"] !== 200) {
             $description = "User service give response !== 200";
             \Log::channel('transaction')->debug("User Service <- ERROR " . $description);
