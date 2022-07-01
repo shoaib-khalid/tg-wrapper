@@ -1,0 +1,120 @@
+affinity: {}
+autoscaling:
+  enabled: false
+  maxReplicas: 100
+  minReplicas: 1
+  targetCPUUtilizationPercentage: 80
+csvLogging:
+  enable: true
+  volumeMount:
+    - mountPath: /var/www/html/storage/logs/
+      name: tg-wrapper-csvl-vol
+  volumes:
+    - configMap:
+        name: tg-wrapper-csvl-cm
+      name: tg-wrapper-csvl-vol
+environmentConfig:
+  configmap:
+    .env: |
+      APP_NAME=tg-wrapper
+      APP_ENV=production
+      APP_KEY=base64:+J9QnkySYlTJ0EwxpCG7Dc9Gd5OIjPOSeuzl/+CG2fE=
+      APP_DEBUG=true
+      APP_URL=https://tgw.symplified.it
+
+      KBOTCORE_URL=http://flow-core.default.svc.cluster.local:5001
+      HANDOVER_URL=http://handover-service.default.svc.cluster.local:6001
+      TELEGRAM_URL=https://api.telegram.org
+      TELEGRAM_TOKEN= 
+       
+      USER_SERVICE_URL=https://api.symplified.it/user-service/v1
+      USER_SERVICE_TOKEN=accessToken
+       
+      LOG_CHANNEL=stack
+      LOG_LEVEL=debug
+
+      DB_CONNECTION=mongodb
+      DB_HOST=stable-mongodb-0.stable-mongodb-headless.default.svc.cluster.local
+      DB_PORT=27017
+      DB_DATABASE=wswrapper
+      DB_USERNAME=root
+      DB_PASSWORD=kalsym@123
+
+      BROADCAST_DRIVER=log
+      CACHE_DRIVER=file
+      FILESYSTEM_DRIVER=local
+      QUEUE_CONNECTION=sync
+      SESSION_DRIVER=file
+      SESSION_LIFETIME=120
+
+      MEMCACHED_HOST=memcached
+
+      REDIS_HOST=redis
+      REDIS_PASSWORD=null
+      REDIS_PORT=6379
+
+      MAIL_MAILER=smtp
+      MAIL_HOST=mailhog
+      MAIL_PORT=1025
+      MAIL_USERNAME=null
+      MAIL_PASSWORD=null
+      MAIL_ENCRYPTION=null
+      MAIL_FROM_ADDRESS=null
+      MAIL_FROM_NAME="tg-wrapper"
+
+      AWS_ACCESS_KEY_ID=
+      AWS_SECRET_ACCESS_KEY=
+      AWS_DEFAULT_REGION=us-east-1
+      AWS_BUCKET=
+      AWS_USE_PATH_STYLE_ENDPOINT=false
+
+      PUSHER_APP_ID=
+      PUSHER_APP_KEY=
+      PUSHER_APP_SECRET=
+      PUSHER_APP_CLUSTER=mt1
+
+      MIX_PUSHER_APP_KEY=""
+      MIX_PUSHER_APP_CLUSTER="mt1"
+  volumeMount:
+    - mountPath: /var/www/html/.env
+      name: tg-wrapper-ec-vol
+      subPath: .env
+  volumes:
+    - configMap:
+        name: tg-wrapper-ec-cm
+      name: tg-wrapper-ec-vol
+fullnameOverride: ''
+image:
+  pullPolicy: Always
+  repository: kalsym/tg-wrapper
+  tag: 0.0.1
+imagePullSecrets:
+  - name: kalsym-docker-hub
+ingress:
+  annotations: {}
+  className: ''
+  enabled: true
+  hosts:
+    - host: tgw.symplified.it
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls:
+    - hosts:
+        - tgw.symplified.it
+      secretName: secret-tls-it
+nameOverride: ''
+nodeSelector: {}
+podAnnotations: {}
+podSecurityContext: {}
+replicaCount: 1
+resources: {}
+securityContext: {}
+service:
+  port: 80
+  type: ClusterIP
+serviceAccount:
+  annotations: {}
+  create: false
+  name: ''
+tolerations: []
